@@ -1,6 +1,7 @@
 ---
 template: ContactPage
 slug: contact
+Title: Contact
 
 header:
   title: Contact

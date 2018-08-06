@@ -21,23 +21,22 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Template, name: template, widget: hidden, default: ContactPage}
           - {label: Slug, name: slug, widget: hidden, default: 'contact'}
           - {label: Title, name: title, widget: string}
-          - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Body, name: body, widget: markdown}
-          - {label: Address, name: address, widget: text}
-          - {label: Phone, name: phone, widget: string}
-          - {label: Email Address, name: email, widget: string}
-          - label: "Meta"
-            required: false
-            name: "meta"
+
+          - label: Header
+            name: header
             widget: "object"
             fields:
-              - {label: Title, name: title, widget: string, required: false}
-              - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
-              - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
-              - {label: Noindex, name: noindex, widget: boolean, required: false}
+              - {label: Hero Image, name: heroImage, widget: image}
+              - {label: Title, name: title, widget: string}
 
-
+          - label: Contact Section 1
+            name: contactSection1
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Phone, name: phone, widget: string}
+              - {label: Email, name: email, widget: string}                
 
 
 
