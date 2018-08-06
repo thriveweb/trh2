@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
+import Helmet from 'react-helmet'
 import _get from 'lodash/get'
+import _format from 'date-fns/format'
 import Link from 'gatsby-link'
 import { ChevronLeft } from 'react-feather'
 
@@ -10,7 +12,6 @@ import AccordionRepeater from '../components/Accordion'
 import GalleryCaseStudies from '../components/GalleryCaseStudies'
 
 import './SinglePost.css'
-
 export const SinglePostTemplate = ({
   title,
   date,
@@ -23,10 +24,13 @@ export const SinglePostTemplate = ({
   gallery = []
 }) => (
   <Fragment>
-    <PageHeader
+  <PageHeader
       backgroundImage="/images/uploads/singlepost-banner.jpg"
       title={title}
     />
+    <Helmet>
+      <title>{title}</title>
+    </Helmet>
 
     <article
       className="SinglePost"
@@ -34,24 +38,6 @@ export const SinglePostTemplate = ({
       itemType="http://schema.org/BlogPosting"
     >
       <div className="SinglePost--Content relative">
-        {/* <div className="SinglePost--Meta">
-            {!!categories.length &&
-              categories.map(obj => (
-                <span key={obj.category} className="SinglePost--Meta--Category">
-                  {obj.category}
-                </span>
-              ))}
-            {date && (
-              <time
-                className="SinglePost--Meta--Date"
-                itemProp="dateCreated pubdate datePublished"
-                date={date}
-              >
-                {dateFormatted}
-              </time>
-            )}
-          </div> */}
-
         <section className="section thin case-study--intro columnContainer">
           <p className="subtitle">
             Intro to the case study porta nibh vestibulum malesuada mattis.
@@ -94,20 +80,20 @@ export const SinglePostTemplate = ({
         />
       </div>
     </article>
-  </Fragment>
+</Fragment>
 )
 
 // Export Default SinglePost for front-end
-const SinglePost = ({ data, pageContext }) => {
-  const { post } = data
-  const { previous, next } = pageContext
+const SinglePost = ({ data, pathContext }) => {
+  const { post, allPosts } = data
+  const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
   return (
     <SinglePostTemplate
       {...post}
       {...post.frontmatter}
       body={post.html}
-      nextPostURL={_get(next, 'fields.slug')}
-      prevPostURL={_get(previous, 'fields.slug')}
+      nextPostURL={_get(thisEdge, 'next.fields.slug')}
+      prevPostURL={_get(thisEdge, 'previous.fields.slug')}
     />
   )
 }
@@ -122,6 +108,7 @@ export const pageQuery = graphql`
   query SinglePost($id: String!) {
     post: markdownRemark(id: { eq: $id }) {
       html
+      id
       frontmatter {
         title
         template
@@ -136,6 +123,33 @@ export const pageQuery = graphql`
         gallery {
           image {
             ...FluidImage
+          }
+        }
+      }
+    }
+
+    allPosts: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "posts" } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          id
+        }
+        next {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
+        previous {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
           }
         }
       }
