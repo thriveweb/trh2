@@ -106,6 +106,57 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Title, name: title, widget: string}
               - {label: Subtitle, name: subtitle, widget: string}
 
+          - label: Section 2
+            name: section2
+            widget: object
+            fields:
+              - {label: Content, name: content, widget: string}
+
+          - label: Section 3
+            name: section3
+            widget: object
+            fields:
+              - {label: Background Image, name: backgroundImage, widget: image}
+              - {label: Title, name: title, widget: string}
+              - label: Single Service
+                name: singleService
+                widget: list
+                fields:
+                  - {label: Name, name: name, widget: string}
+                  - {label: Default Icon, name: defaultIcon, widget: image}
+                  - {label: Hover Icon, name: hoverIcon, widget: image}
+                  - {label: Link, name: link, widget: string}
+
+          - label: Section 4
+            name: section4
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+
+          - label: Section 5
+            name: section5
+            widget: object
+            fields:
+              - {label: Background Image, name: backgroundImage, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Content, name: content, widget: markdown}
+              - {label: Quote, name: quote, widget: string}
+
+          - label: Section 6
+            name: section6
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+
+          - label: Gallery
+            name: gallery
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+
+                       
+
 
 
   - name: infoPages

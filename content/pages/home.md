@@ -1,6 +1,7 @@
 ---
 template: HomePage
-slug: '' 
+slug: ''
+title: TRH Equine Vets
 
 section1:
   heroImage: /images/uploads/background-image-1.png
