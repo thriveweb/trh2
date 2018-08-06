@@ -21,8 +21,34 @@ class Hamburger extends Component {
             <NavLink to="/about/" exact>
                 About
             </NavLink>
-            <NavLink to="/Services/" exact>
+            <NavLink className="services-mobile" to="/Services/" style={{cursor: 'default'}} exact>
                 Services
+                <i class="fas fa-angle-down" />
+                <ul className="mobile-sub-menu">
+                  <li>
+                    <Link to="/ambulatory/">Ambulatory</Link>
+                  </li>
+                  <li>
+                    <Link to="/treatment/">Treatment</Link>
+                  </li>
+                  <li>
+                    <Link to="/lameness-evaluation/">Lameness Evaluation</Link>
+                  </li>
+                  <li>
+                    <Link to="/performance-assessment/">
+                      Poor Performance Assessment
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/routine-surgery/">Routine Surgery</Link>
+                  </li>
+                  <li>
+                    <Link to="/diagnostics/">Diagnostics - Radiography</Link>
+                  </li>
+                  <li>
+                    <Link to="/examinations/">Pre-Purchase Examinations</Link>
+                  </li>
+                </ul>
             </NavLink>
             <NavLink to="/CaseStudies/" exact>
                 Case Studies

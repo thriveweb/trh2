@@ -17,7 +17,7 @@ span.bm-burger-bars{
 }
 
 .bm-menu-wrap{
-    width: 25rem !important;
+    width: 30rem !important;
 }
 
 .bm-menu{
@@ -83,6 +83,35 @@ span.bm-cross{
     background: white;
 }
 
+.services-mobile {
+  position: relative;
+}
+
+
+.services-mobile .mobile-sub-menu {
+  list-style: none;
+  line-height: 30px;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: none;
+  display:none;
+}
+
+.services-mobile i {
+  position: absolute;
+  top: 7px;
+  right: -9px;
+}
+
+.services-mobile .mobile-sub-menu a {
+  text-decoration: none !important;
+}
+
+.services-mobile .mobile-sub-menu a:hover {
+  color: var(--orange);
+  transition: all ease 0.5s;
+}
+
 
 
 @media screen and (max-width: 500px){
@@ -102,5 +131,13 @@ span.bm-cross{
     .mobile-button {
         margin: 0 auto !important;
         width: 50%;
+    }
+
+    .services-mobile i {
+      right: 197px;
+    }
+
+    .services-mobile {
+  
     }
 }
