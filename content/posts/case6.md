@@ -1,13 +1,11 @@
 ---
-title: Case 1
+title: Case 6
 template: SinglePost
-status: Featured / Published
-date: '2018-03-27'
-featuredImage: /images/uploads/case-study--1.jpg
-excerpt: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
-categories:
-  - category: News
+status: Published
+date: '2018-05-24'
+featuredImage: /images/uploads/case-study--5.jpg
+excerpt: This is placeholder text that our web designers put here to make sure words appear properly on your website. This text is going to be replaced once the website is completed. You are currently reading text that is written in English, not any other language.
+
 accordion:
   - title: Sed pretium, felis in bibendum suscipit, ante ligula commodo nisl?
     content: |-
@@ -33,4 +31,6 @@ gallery:
   - image: /images/uploads/case-slider-1.jpg
 ---
 
-Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
+This is placeholder text that our web designers put here to make sure words appear properly on your website. This text is going to be replaced once the website is completed. You are currently reading text that is written in English, not any other language.
+
+Be careful not to waste too much time reading placeholder text! This text isn’t going to remain here because it doesn't pertain to the website. This paragraph has been copied from a program that automatically generates paragraphs like this. It is useful for web designers to use placeholder text so they can easily see what different fonts look like on a realistic paragraph.

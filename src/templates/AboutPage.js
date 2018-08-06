@@ -1,45 +1,140 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React, { Fragment } from 'react'
+import Link from 'gatsby-link'
 
 import PageHeader from '../components/PageHeader'
 import Image from '../components/Image'
-import Content from '../components/Content.js'
-import './AboutPage.css'
+import BackgroundImage from '../components/BackgroundImage'
+import Services from '../components/Services'
+import Gallery from '../components/Gallery'
+
+import './about.scss'
+import '../components/Services.scss'
 
 // Export Template for use in CMS preview
 export const AboutPageTemplate = ({
-  title,
-  subtitle,
-  featuredImage,
-  section1,
-  section2,
-  testImage,
-  body
+  header,
+  aboutSection1,
+  aboutSection2,
+  aboutSection3,
+  aboutSection4,
+  gallery = []
 }) => (
-  <main className="About">
-    <Helmet>
-      <title>{title}</title>
-    </Helmet>
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
+  <Fragment>
+    <main className="AboutPage">
+      <PageHeader title={header.title} backgroundImage={header.heroImage} />
 
-    <section className="section">
-      <div className="container">
-        <Content source={section1} />
-      </div>
-    </section>
+      <section className="section thick about-section--1 relative">
+        <BackgroundImage
+          src="/images/uploads/about-background-image-1.jpg"
+          alt="header image"
+        />
 
-    <section className="section">
-      <div className="container">
-        <Content source={section2} />
-        <p>The image below is a {'<Image />'}</p>
-        <Image src={testImage} alt="Image" />
-      </div>
-    </section>
-  </main>
+        <div className="container relative">
+          <h2>{aboutSection1.title}</h2>
+          <p className="subtitle">{aboutSection1.content}</p>
+        </div>
+      </section>
+
+      <section className="section thick about-section--2 relative">
+        <div className="container">
+          <ul>
+            <li>
+              <Image
+                className="about-icon-image"
+                src={aboutSection2.icon1Image}
+                alt="mobile diagnostics"
+              />
+              <p className="service-title">{aboutSection2.icon1Title}</p>
+              <p className="subtitle">{aboutSection2.icon1Subtitle}</p>
+            </li>
+            <li>
+              <Image
+                className="about-icon-image"
+                src={aboutSection2.icon2Image}
+                alt="simple fees"
+              />
+              <p className="service-title">{aboutSection2.icon2Title}</p>
+              <p className="subtitle">{aboutSection2.icon2Subtitle}</p>
+            </li>
+            <li>
+              <Image
+                className="about-icon-image"
+                src={aboutSection2.icon3Image}
+                alt="quality service"
+              />
+              <p className="service-title">{aboutSection2.icon3Title}</p>
+              <p className="subtitle">{aboutSection2.icon3Subtitle}</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="section thick about-section--3 relative">
+        <BackgroundImage
+          src={aboutSection3.backgroundImage}
+          alt="about background-image-2"
+        />
+
+        <div className="container relative">
+          <h2>{aboutSection3.title}</h2>
+          <p className="big-body">{aboutSection3.subtitle}</p>
+
+          <div className="vet-container">
+            <ul>
+              <li>
+                <Image
+                  className="vet-image"
+                  src={aboutSection3.vetImage1}
+                  alt="vet staff"
+                />
+                <p className="service-title">{aboutSection3.vetName1}</p>
+                <p className="subtitle">{aboutSection3.vetDescription1}</p>
+              </li>
+              <li>
+                <Image
+                  className="vet-image"
+                  src={aboutSection3.vetImage2}
+                  alt="vet staff"
+                />
+                <p className="service-title">{aboutSection3.vetName2}</p>
+                <p className="subtitle">{aboutSection3.vetDescription2}</p>
+              </li>
+              <li>
+                <Image
+                  className="vet-image"
+                  src={aboutSection3.vetImage3}
+                  alt="vet staff"
+                />
+                <p className="service-title">{aboutSection3.vetName3}</p>
+                <p className="subtitle">{aboutSection3.vetDescription3}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section thick about-section--4">
+        <div className="relative services container">
+          <h2>{aboutSection4.title}</h2>
+          <div className="flex">
+            <Services singleService={aboutSection4.singleService} />
+          </div>
+
+          <p className="big-body">{aboutSection4.subtitle}</p>
+        </div>
+
+        {gallery.length && (
+          <section className="Centre--Gallery">
+            <div className="container taCenter">
+              <Gallery
+                gallery={gallery}
+              />
+            </div>
+          </section>
+        )}
+      </section>
+    </main>
+  </Fragment>
 )
 
 const AboutPage = ({ data: { page } }) => (
@@ -53,17 +148,76 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
-        template
-        subtitle
-        featuredImage {
-          ...FluidImage
+        header {
+          heroImage {
+            ...FluidImage
+          }
+          title
         }
-        testImage {
-          ...FluidImage
+        aboutSection1 {
+          title
+          content
         }
-        section1
-        section2
+        aboutSection2 {
+          icon1Image {
+            ...FluidImage
+          }
+          icon1Title
+          icon1Subtitle
+          icon2Image {
+            ...FluidImage
+          }
+          icon2Title
+          icon2Subtitle
+          icon3Image {
+            ...FluidImage
+          }
+          icon3Title
+          icon3Subtitle
+        }
+        aboutSection3 {
+          backgroundImage {
+            ...FluidImage
+          }
+          title
+          subtitle
+          vetImage1 {
+            ...FluidImage
+          }
+          vetName1
+          vetDescription1
+          vetImage2 {
+            ...FluidImage
+          }
+          vetName2
+          vetDescription2
+          vetImage3 {
+            ...FluidImage
+          }
+          vetName3
+          vetDescription3
+        }
+        aboutSection4 {
+          title
+          subtitle
+          singleService {
+            name
+            defaultIcon {
+              ...FluidImage
+            }
+            hoverIcon {
+              ...FluidImage
+            }
+            link
+          }
+        }
+        gallery {
+          image {
+            ...FluidImage
+          }
+          title
+          content
+        }
       }
     }
   }

@@ -1,70 +1,69 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import { MapPin, Smartphone, Mail } from 'react-feather'
+
 
 import PageHeader from '../components/PageHeader'
-import FormSimpleAjax from '../components/FormSimpleAjax'
-import Content from '../components/Content'
-import './ContactPage.css'
+import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
+import Image from '../components/Image'
+
+import './contact.scss'
 
 // Export Template for use in CMS preview
-export const ContactPageTemplate = ({
-  body,
-  title,
-  subtitle,
-  featuredImage,
-  address,
-  phone,
-  email
-}) => (
-  <main className="Contact">
-    <Helmet>
-      <title>{title}</title>
-    </Helmet>
+export const ContactPageTemplate = ({ header, contactSection1 }) => (
+  <Fragment>
+    <main className="Contact">
+      <PageHeader
+        title={header.title}
+        backgroundImage={header.heroImage}
+        alt={header.title}
+      />
 
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
+      <section className="section contact-section--1">
+        <div className="container flex">
+          <div className="right-column">
+            <h2>{contactSection1.title}</h2>
+            <p className="big-body">{contactSection1.subtitle}</p>
 
-    <section className="section Contact--Section1">
-      <div className="container Contact--Section1--Container">
-        <div>
-          <Content source={body} />
+            <ul>
+              <li>
+                <Image
+                  className="quote-mark"
+                  src="/images/uploads/contact-icon.svg"
+                  alt="phone icon"
+                />
 
-          <div className="Contact--Details">
-            {address && (
-              <a
-                className="Contact--Details--Item"
-                href={`https://www.google.com.au/maps/search/${encodeURI(
-                  address
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin /> {address}
-              </a>
-            )}
-            {phone && (
-              <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                <Smartphone /> {phone}
-              </a>
-            )}
-            {email && (
-              <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                <Mail /> {email}
-              </a>
-            )}
+                <a
+                  className="service-title"
+                  href={`tel:${contactSection1.phone}`}
+                >
+                  {contactSection1.phone}
+                </a>
+              </li>
+              <li>
+                <Image
+                  className="quote-mark"
+                  src="/images/uploads/email_icon.svg"
+                  alt="email icon"
+                />
+
+                <a
+                  className="service-title"
+                  href={`mailto:${contactSection1.email}`}
+                >
+                  {contactSection1.email}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="left-column">
+            <EnquiryFormSimpleAjax />
           </div>
         </div>
-
-        <div>
-          <FormSimpleAjax name="Simple Form Ajax" />
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </Fragment>
 )
 
 const ContactPage = ({ data: { page } }) => (
@@ -78,15 +77,18 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
-        template
-        subtitle
-        featuredImage {
-          ...FluidImage
+        header {
+          title
+          heroImage {
+            ...FluidImage
+          }
         }
-        address
-        phone
-        email
+        contactSection1 {
+          title
+          subtitle
+          phone
+          email
+        }
       }
     }
   }

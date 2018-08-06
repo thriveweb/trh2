@@ -1,8 +1,9 @@
 ---
 template: DefaultPage
-slug: default
+slug: 'default'
 title: Default
-featuredImage: /images/uploads/nitish-meena-37745.jpg
+subtitle: This is the DefaultPage template
+featuredImage: /images/uploads/case-study--1.jpg
 ---
 
 ## This is the DefaultPage template

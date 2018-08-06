@@ -1,8 +1,12 @@
-siteTitle: Whitesmoke
-siteUrl: 'https://whitesmoke.netlify.com'
+siteTitle: TRH Equine Vets
+siteUrl: 'https://netlify-cms-react-starter.netlify.com'
 siteDescription: >-
-  A starter project for creating lightning-fast websites with Gatsby Netlify
-  CMS.
+  A starter project for creating lightning-fast, offline-first websites with
+  Netlify CMS and React.
 socialMediaCard:
   image: /images/uploads/card-og.png
-headerScripts: <!-- Add your analytics scripts / verification meta here -->
+  twitterCreatorAccount: '@Jinksi'
+  twitterSiteAccount: ''
+headerScripts: |-
+  <!-- Add your analytics scripts / verification meta here -->
+enableServiceWorker: false

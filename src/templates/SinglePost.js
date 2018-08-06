@@ -1,114 +1,113 @@
 import React, { Fragment } from 'react'
-import Helmet from 'react-helmet'
 import _get from 'lodash/get'
-import _format from 'date-fns/format'
 import Link from 'gatsby-link'
 import { ChevronLeft } from 'react-feather'
 
-import Content from '../components/Content'
-import Image from '../components/Image'
+import BackgroundImage from '../components/BackgroundImage'
+import PageHeader from '../components/PageHeader'
+import Cta from '../components/Cta'
+import AccordionRepeater from '../components/Accordion'
+import GalleryCaseStudies from '../components/GalleryCaseStudies'
+
 import './SinglePost.css'
 
 export const SinglePostTemplate = ({
   title,
   date,
-  featuredImage,
+  dateFormatted,
   body,
   nextPostURL,
   prevPostURL,
-  categories = []
+  accordion,
+  categories = [],
+  gallery = []
 }) => (
-  <article
-    className="SinglePost section light"
-    itemScope
-    itemType="http://schema.org/BlogPosting"
-  >
-    <Helmet>
-      <title>{title}</title>
-    </Helmet>
+  <Fragment>
+    <PageHeader
+      backgroundImage="/images/uploads/singlepost-banner.jpg"
+      title={title}
+    />
 
-    {featuredImage && (
-      <Image
-        background
-        className="SinglePost--BackgroundImage"
-        src={featuredImage}
-        alt={title}
-      />
-    )}
-
-    <div className="container skinny">
-      <Link className="SinglePost--BackButton" to="/blog/">
-        <ChevronLeft /> BACK
-      </Link>
+    <article
+      className="SinglePost"
+      itemScope
+      itemType="http://schema.org/BlogPosting"
+    >
       <div className="SinglePost--Content relative">
-        <div className="SinglePost--Meta">
-          {date && (
-            <time
-              className="SinglePost--Meta--Date"
-              itemProp="dateCreated pubdate datePublished"
-              date={date}
-            >
-              {_format(date, 'MMMM Do, YYYY')}
-            </time>
-          )}
-          {categories && (
-            <Fragment>
-              <span>|</span>
-              {categories.map((cat, index) => (
-                <span key={cat.category} className="SinglePost--Meta--Category">
-                  {cat.category}
-                  {/* Add a comma on all but last category */}
-                  {index !== categories.length - 1 ? ',' : ''}
+        {/* <div className="SinglePost--Meta">
+            {!!categories.length &&
+              categories.map(obj => (
+                <span key={obj.category} className="SinglePost--Meta--Category">
+                  {obj.category}
                 </span>
               ))}
-            </Fragment>
-          )}
-        </div>
+            {date && (
+              <time
+                className="SinglePost--Meta--Date"
+                itemProp="dateCreated pubdate datePublished"
+                date={date}
+              >
+                {dateFormatted}
+              </time>
+            )}
+          </div> */}
 
-        {title && (
-          <h1 className="SinglePost--Title" itemProp="title">
-            {title}
-          </h1>
-        )}
+        <section className="section thin case-study--intro columnContainer">
+          <p className="subtitle">
+            Intro to the case study porta nibh vestibulum malesuada mattis.
+            Curabitur neque enim, dignissim eget dapibus a, cursus id ex. Nunc
+            eu laoreet magna, non sodales ex. <br />
+            <br />
+            Etiam eu sem lorem. In ac porta purus, in sagittis dui. Sed pretium,
+            felis in bibendum suscipit, ante ligula commodo nisl, non posuere
+            nulla ipsum nec libero. Phasellus porta volutpat tortor, at
+            bibendum. Laudantium, totam rem aperiam.
+          </p>
+        </section>
 
-        <div className="SinglePost--InnerContent">
-          <Content source={body} />
-        </div>
+        <section className="section relative case-study--accordion">
+          <BackgroundImage
+            src="/images/uploads/about-background-image-2.svg"
+            alt="background image"
+          />
 
-        <div className="SinglePost--Pagination">
-          {prevPostURL && (
-            <Link
-              className="SinglePost--Pagination--Link prev"
-              to={prevPostURL}
-            >
-              Previous Post
-            </Link>
-          )}
-          {nextPostURL && (
-            <Link
-              className="SinglePost--Pagination--Link next"
-              to={nextPostURL}
-            >
-              Next Post
-            </Link>
-          )}
-        </div>
+          <div className=" container">
+            <AccordionRepeater accordion={accordion} />
+          </div>
+        </section>
+
+        <section className="section case-study--slider">
+          <div className="container">
+            {gallery.length && (
+              <section className="Centre--Gallery">
+                <div className="container taCenter">
+                  <GalleryCaseStudies galleryCaseStudies={gallery} />
+                </div>
+              </section>
+            )}
+          </div>
+        </section>
+
+        <Cta
+          title="For all Your Horse Needs Please Give Us a Call"
+          subtitle="We are a mobile diagnostics servicing from Mudgeeraba to Beaudesert on a basic call out fee."
+        />
       </div>
-    </div>
-  </article>
+    </article>
+  </Fragment>
 )
 
 // Export Default SinglePost for front-end
-const SinglePost = ({ data, pathContext }) => {
-  const { post, allPosts } = data
-  const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
+const SinglePost = ({ data, pageContext }) => {
+  const { post } = data
+  const { previous, next } = pageContext
   return (
     <SinglePostTemplate
       {...post}
       {...post.frontmatter}
       body={post.html}
-      nextPostURL={_get(thisEdge, 'next.fields.slug')}
-      prevPostURL={_get(thisEdge, 'previous.fields.slug')}
+      nextPostURL={_get(next, 'fields.slug')}
+      prevPostURL={_get(previous, 'fields.slug')}
     />
   )
 }
@@ -123,43 +122,20 @@ export const pageQuery = graphql`
   query SinglePost($id: String!) {
     post: markdownRemark(id: { eq: $id }) {
       html
-      id
       frontmatter {
         title
         template
         subtitle
         date
-        categories {
-          category
+        dateFormatted: date(formatString: "MMMM Do, YYYY")
+        accordion {
+          title
+          content
+          link
         }
-        featuredImage {
-          ...FluidImage
-        }
-      }
-    }
-
-    allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          id
-        }
-        next {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
-        previous {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
+        gallery {
+          image {
+            ...FluidImage
           }
         }
       }

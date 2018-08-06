@@ -1,7 +1,6 @@
 ---
 template: BlogIndex
-slug: blog
-title: Blog
-featuredImage: /images/uploads/ng-32703.jpg
-subtitle: Blog subtitle
+slug: 'case-studies'
+title: Case Studies
+featuredImage: /images/uploads/case-study--1.jpg
 ---
