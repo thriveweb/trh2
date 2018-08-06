@@ -1,0 +1,50 @@
+.Gallery img {
+  height: 100px !important;
+  width: auto !important;
+}
+
+.gallery .service-title {
+  font-weight: 500 !important;
+  margin-top: 40px;
+  margin-bottom: 17px;
+}
+
+.swiper-slide .service-title {
+  font-weight: 500 !important;
+  margin-top: 40px;
+  margin-bottom: 17px;
+}
+
+.swiper-slide .subtitle {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 74px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--orange);
+}
+
+.swiper-slide {
+  margin-right: 120px !important;
+}
+
+.SwiperButton {
+  border: 3px solid var(--secondary);
+  background: white;
+  padding: 0.5rem;
+  flex-basis: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+.SwiperButton * {
+  display: block;
+}

@@ -30,4 +30,3 @@ section2: |-
   vestibulum.
 testImage: /images/uploads/paint2.jpg
 ---
-

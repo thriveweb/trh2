@@ -1,0 +1,47 @@
+.service-intro {
+  .container {
+    max-width: 1000px;
+  }
+
+  .service-single {
+    background-color: var(--darkGrey);
+    box-shadow: 0 5px 22px 0 rgba(1, 1, 1, 0.3);
+    border-radius: 3px;
+    padding: 60px 60px 60px 201px;
+    margin-top: 4rem;
+
+    .icon {
+      position: absolute;
+      width: 200px;
+      top: -50px;
+      left: -50px;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    .subtitle {
+      color: white;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .icon {
+      display: none;
+    }
+
+    h2 {
+      font-size: 26px;
+      line-height: 40px;
+    }
+    .service-single {
+      padding: 30px 30px 30px 30px !important;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+.Footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background: var(--blue);
+    border-top: 7px solid var(--lightBlue);
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #6C88BF;
+    }
+
+    .service-title {
+        font-family: var(--font-museo);
+        color: white;
+    }
+
+    .footer-top {
+        padding-bottom: 3rem;
+    }
+
+    .column-1 {
+        .footer-logo {
+            max-width: 180px;
+        }
+    }
+
+    .column-2 {
+        .contact-socials {
+            margin-top: 1.8rem;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .phone {
+                font-family: var(--font-museo);
+                color: white;
+                font-size: 29px;
+                font-weight: 700;
+
+                &:hover {
+                  color: var(--orange);
+                  transition: all ease 0.5s;
+                }
+            }
+
+            .email {
+                font-family: var(--font-museoSans);
+                color: white;
+                font-size: 15px;
+                opacity: 0.6;
+                letter-spacing: 0.09px;
+            }
+
+            .social-links {
+                display: flex;
+
+                li {
+                    font-size: 18px;
+                    line-height: 41px;
+                    margin: 1rem;
+
+                    a {
+                        border-radius: 20px;
+                        height: 40px !important;
+                        width: 40px !important;
+                        display: block;
+                        text-align: center;
+                        background: var(--black);
+                    }
+                }
+
+            }
+        }
+    }
+
+    .column-3 {
+        display: flex;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: var(--font-museoSans);
+            font-size: 15px;
+            opacity: 0.6;
+            font-weight: 300;
+            letter-spacing: 0.09;
+            line-height: 35px;
+
+            &:hover {
+              color: var(--orange);
+              transition: all ease 0.5s;
+            }
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .sitemap-menu {
+            margin-right: 10rem;
+        }
+
+        .service-menu2 {
+            margin-top: 6.1rem;
+        }
+    }
+
+    span {
+        opacity: 0.6;
+        font-family: var(--font-museoSans);
+        font-size: 13px;
+        color: #FFFFFF;
+        letter-spacing: 0.08px;
+        line-height: 26px;
+        width: 100%;
+        padding-top: 16px;
+
+        a {
+            text-decoration: none;
+            color: var(--orange);
+        }
+    }
+
+    .footer-bottom {
+        padding-top: 2rem;
+    }
+
+    @media (max-width:1220px) {
+        .sitemap-menu {
+            margin-right: 1rem !important;
+        }
+    }
+
+    @media (max-width:1078px) {
+        .footer-top {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .contact-socials {
+            margin-top: 3rem !important;
+
+            .service-title {
+              text-align: center;
+            }
+        }
+    }
+
+    @media (max-width:651px) {
+        .footer-top .column-3 {
+            flex-direction: column;
+            text-align: center;
+
+            ul {
+                padding-left: 0;
+            }
+
+            .service-menu2 {
+                margin-top: 0rem;
+                margin-bottom: 0;
+            }
+
+            .service-menu {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}

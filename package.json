@@ -28,9 +28,12 @@
     "postcss-preset-env": "^5.1.0",
     "prop-types": "^15.6.0",
     "react": "^16.4.1",
+    "react-accessible-accordion": "^2.4.4",
+    "react-burger-menu": "^2.5.2",
     "react-dom": "^16.4.1",
     "react-feather": "^1.1.0",
     "react-helmet": "^5.2.0",
+    "react-id-swiper": "^1.6.6",
     "react-markdown": "^3.3.2"
   },
   "keywords": [
