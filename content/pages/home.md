@@ -1,6 +1,6 @@
 ---
 template: HomePage
-slug: ''
+slug: '' 
 
 section1:
   heroImage: /images/uploads/background-image-1.png

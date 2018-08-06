@@ -37,6 +37,10 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
               - {label: Noindex, name: noindex, widget: boolean, required: false}
 
+
+
+
+
       - file: "content/pages/blog.md"
         label: "Blog Page"
         name: "blog-page"
@@ -55,6 +59,10 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
               - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
               - {label: Noindex, name: noindex, widget: boolean, required: false}
+
+
+
+
 
       - file: "content/pages/about.md"
         label: "About Page"
@@ -78,6 +86,10 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
               - {label: Noindex, name: noindex, widget: boolean, required: false}
 
+
+
+
+
       - file: "content/pages/home.md"
         label: "Home Page"
         name: "home-page"
@@ -85,18 +97,15 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Template, name: template, widget: hidden, default: HomePage}
           - {label: Slug, name: slug, widget: hidden, default: ''}
           - {label: Title, name: title, widget: string}
-          - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Body, name: body, widget: markdown}
-          - label: "Meta"
-            required: false
-            name: "meta"
-            widget: "object"
+
+          - label: Section 1
+            name: section1
+            widget: object
             fields:
-              - {label: Title, name: title, widget: string, required: false}
-              - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
-              - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
-              - {label: Noindex, name: noindex, widget: boolean, required: false}
+              - {label: Hero Image, name: heroImage, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+
 
 
   - name: infoPages
