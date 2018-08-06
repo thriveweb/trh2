@@ -1,6 +1,7 @@
 ---
 template: AboutPage
 slug: about
+title: About
 
 header:
   heroImage: /images/uploads/about-header.jpg

@@ -71,25 +71,75 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Template, name: template, widget: hidden, default: AboutPage}
           - {label: Slug, name: slug, widget: hidden, default: 'about'}
           - {label: Title, name: title, widget: string}
-          - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Section 1, name: section1, widget: markdown}
-          - {label: Section 2, name: section2, widget: markdown}
-          - {label: Test Image, name: testImage, widget: image}
-          - label: "Meta"
-            required: false
-            name: "meta"
+
+          - label: Header
+            name: Header
             widget: "object"
             fields:
-              - {label: Title, name: title, widget: string, required: false}
-              - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
-              - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
-              - {label: Noindex, name: noindex, widget: boolean, required: false}
+              - {label: Hero Image, name: heroImage, widget: image}
+              - {label: Title, name: title, widget: string}
 
+          - label: About Section 1
+            name: aboutSection1
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Content, name: content, widget: markdown}
 
+          - label: About Section 2
+            name: aboutSection2
+            widget: "object"
+            fields:
+              - {label: Icon Image 1, name: icon1Image, widget: image}
+              - {label: Icon 1 Title, name: icon1Title, widget: string}
+              - {label: Icon 1 Subtitle, name: icon1Subtitle, widget: string}
+              - {label: Icon Image 2, name: icon2Image, widget: image}
+              - {label: Icon 2 Title, name: icon2Title, widget: string}
+              - {label: Icon 2 Subtitle, name: icon2Subtitle, widget: string}
+              - {label: Icon Image 3, name: icon3Image, widget: image}
+              - {label: Icon 3 Title, name: icon3Title, widget: string}
+              - {label: Icon 3 Subtitle, name: icon3Subtitle, widget: string}
 
+          - label: About Section 3
+            name: aboutSection3
+            widget: "object"
+            fields:
+              - {label: Background Image, name: backgroundImage, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Vet 1 Image, name: vetImage1, widget: image}
+              - {label: Vet 1 Name, name: vetName1, widget: string}
+              - {label: Vet 1 Information, name: vetDescription1, widget: markdown}
+              - {label: Vet 2 Image, name: vetImage2, widget: image}
+              - {label: Vet 2 Name, name: vetName2, widget: string}
+              - {label: Vet 2 Information, name: vetDescription2, widget: markdown}
+              - {label: Vet 3 Image, name: vetImage3, widget: image}
+              - {label: Vet 3 Information, name: vetDescription3, widget: markdown}
 
+          - label: About Section 4
+            name: aboutSection4
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - label: Single Service
+                name: singleService
+                widget: list
+                fields:
+                  - {label: Name, name: name, widget: string}
+                  - {label: Default Icon, name: defaultIcon, widget: image}
+                  - {label: Hover Icon, name: hoverIcon, widget: image}
+                  - {label: Link, name: link, widget: string}
 
+          - label: Gallery
+            name: gallery
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Content, name: content, widget: string}
+
+            
       - file: "content/pages/home.md"
         label: "Home Page"
         name: "home-page"
@@ -155,7 +205,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Image, name: image, widget: image}
 
-                       
+
 
 
 
