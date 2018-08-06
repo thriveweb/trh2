@@ -15,7 +15,9 @@ export default ({ children, data }) => {
   return (
     <Fragment>
       <Helmet defaultTitle={siteTitle} titleTemplate={`%s | ${siteTitle}`}>
-        {/* Add font link tags here */}
+        <link rel="stylesheet" href="https://use.typekit.net/ydi7gbe.css" />
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
       </Helmet>
 
       <Meta

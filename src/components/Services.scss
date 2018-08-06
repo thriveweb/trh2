@@ -32,12 +32,16 @@
     }
 
     .icon {
-      margin-bottom: 23px;
+      padding-bottom: 23px;
+      max-width: 90px;
+      margin: 0 auto;
     }
 
     .icon-hover {
+      padding-bottom: 23px;
+      max-width: 90px;
+      margin: 0 auto;
       display: none;
-      margin-bottom: 23px;
     }
   }
 
