@@ -63,15 +63,7 @@ section6:
 
 gallery:
   - image: /images/uploads/partnerlogo-1.png
-    title: Tri-State Veterinary
-    content: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
   - image: /images/uploads/partnerlogo-2.png
-    title: RideStrong
-    content: Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore otam rem aperiam, eaque ipsa quae ab illo inventore.
   - image: /images/uploads/partnerlogo-3.png
-    title: Equine Veterinary Acupuncture Chiropractic
-    content: Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
   - image: /images/uploads/partnerlogo-4.png
-    title: Owen Valley Equine Vets
-    content: Aaut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 ---

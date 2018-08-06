@@ -7,7 +7,7 @@ import Content from '../components/Content'
 import Image from '../components/Image'
 import Services from '../components/Services'
 import Cta from '../components/Cta'
-import Gallery from '../components/Gallery'
+import HomeGallery from '../components/HomeGallery'
 
 import '../components/Services.scss'
 import './index.scss'
@@ -95,15 +95,17 @@ export const HomePageTemplate = ({
       <section className="section--6 section relative">
         <div className="container">
           <h2>{section6.title}</h2>
+
+          {gallery.length && (
+            <section className="Centre--Gallery">
+              <div className="container taCenter">
+                <homeGallery homeGallery={gallery} />
+              </div>
+            </section>
+          )}
         </div>
 
-        {gallery.length && (
-          <section className="section thin Centre--Gallery">
-            <div className="container taCenter">
-              <Gallery images={gallery.map(item => item.image)} />
-            </div>
-          </section>
-        )}
+
       </section>
     </main>
   </Fragment>
@@ -169,6 +171,11 @@ export const pageQuery = graphql`
         }
         section6 {
           title
+        }
+        gallery {
+          image {
+            ...FluidImage
+          }
         }
       }
     }

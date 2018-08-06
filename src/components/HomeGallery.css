@@ -1,0 +1,33 @@
+.Gallery img {
+  height: 100% !important;
+  width: auto !important;
+}
+
+.swiper-wrapper {
+  margin-bottom: 40px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--orange);
+}
+
+.swiper-slide {
+  margin-right: 30px !important;
+}
+
+.SwiperButton {
+  border: 3px solid var(--secondary);
+  background: white;
+  padding: 0.5rem;
+  flex-basis: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+.SwiperButton * {
+  display: block;
+}

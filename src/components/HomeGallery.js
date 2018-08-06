@@ -4,9 +4,9 @@ import 'react-id-swiper/src/styles/css/swiper.css'
 
 import Image from './Image'
 
-import './Gallery.css'
+import './HomeGallery.css'
 
-export default ({ images = [], alt = '' }) => {
+export default ({ homeGallery = [], alt = '' }) => {
   const params = {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -21,14 +21,13 @@ export default ({ images = [], alt = '' }) => {
   return (
     <div className="Gallery">
       <Swiper {...params}>
-        {images.map((image, index) => (
+        {homeGallery.map((fields, index) => (
           <div key={`GalleryImage${index}`}>
-            <Image key={image + index} src={image} alt={alt} />
-            <p className="service-title">This Title</p>
-            <p className="subtitle">
-              Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-              otam rem aperiam, eaque ipsa quae ab illo inventore.
-            </p>
+            <Image
+              key={fields.image + index}
+              src={fields.image}
+              alt={fields.title}
+            />
           </div>
         ))}
       </Swiper>
