@@ -82,3 +82,35 @@
   text-align: center;
   padding: 2rem;
 }
+
+.file-download-EnquiryForm--Input {
+  color: var(--black);
+  font-family: var(--font-museoSans);
+  font-size: 13px;
+  width: 175px;
+}
+
+.file-download {
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 !important;
+  flex: 0 !important;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 360px) {
+  .file-download {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .file-download-EnquiryForm--Input {
+    margin-bottom: 2rem;
+  }
+}
+
+.file-download-EnquiryForm--Input:focus {
+  outline: none !important;
+}

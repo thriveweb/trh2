@@ -19,6 +19,16 @@ class Form extends React.Component {
     disabled: false
   }
 
+  handleUpload = (event, target) => {
+    const file = event.target.files[0]
+      ? event.target.files[0].name
+      : this.state[target]
+
+    this.setState({
+      [target]: file
+    })
+  }
+
   handleSubmit = e => {
     e.preventDefault()
     if (this.state.disabled) return
@@ -105,15 +115,33 @@ class Form extends React.Component {
             required
           />
         </label>
+
         <input type="text" name="_gotcha" style={{ display: 'none' }} />
         {!!subject && <input type="hidden" name="subject" value={subject} />}
         <input type="hidden" name="form-name" value={name} />
-        <input
-          className="Button EnquiryForm--SubmitButton"
-          type="submit"
-          value="Send"
-          disabled={this.state.disabled}
-        />
+
+        <div className="file-download">
+          <div className="file-download-item">
+            <label className="EnquiryForm--Label title">
+              <input
+                className="file-download-EnquiryForm--Input"
+                type="file"
+                placeholder="Upload your CV"
+                name="upload-cv"
+                onChange={event => this.handleUpload(event, 'resume')}
+                required
+              />
+              {this.state.resume && <p>{this.state.resume}</p>}
+            </label>
+          </div>
+
+          <input
+            className="Button EnquiryForm--SubmitButton"
+            type="submit"
+            value="Send"
+            disabled={this.state.disabled}
+          />
+        </div>
       </form>
     )
   }
