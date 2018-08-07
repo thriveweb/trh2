@@ -87,6 +87,9 @@ span.bm-cross{
   position: relative;
 }
 
+.hide {
+  display: none;
+}
 
 .services-mobile .mobile-sub-menu {
   list-style: none;
@@ -94,7 +97,6 @@ span.bm-cross{
   margin-bottom: 0;
   padding-left: 0;
   margin-top: none;
-  display:none;
 }
 
 .services-mobile i {
@@ -138,6 +140,6 @@ span.bm-cross{
     }
 
     .services-mobile {
-  
+
     }
 }

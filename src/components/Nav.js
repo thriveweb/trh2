@@ -15,7 +15,7 @@ export default ({ handlePopupOpen }) => (
       </Link>
 
       <div className="right hamburger">
-        <Hamburger />
+        <Hamburger  />
       </div>
 
       <div className="flex menu">

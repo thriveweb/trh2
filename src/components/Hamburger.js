@@ -8,23 +8,65 @@ import './Hamburger.css'
 import { slide as Menu } from 'react-burger-menu'
 
 class Hamburger extends Component {
-    showSettings (event) {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+        hideServicesSubmenu: true,
+        hideMobileMenu: true,
+        menuOpen: false
+    }
+  }
+
+  // This keeps your state in sync with the opening/closing of the menu
+    // via the default means, e.g. clicking the X, pressing the ESC key etc.
+    handleStateChange (state) {
+      this.setState({menuOpen: state.isOpen})
+    }
+
+    // This can be used to close the menu, e.g. when a user clicks a menu item
+    closeMenu () {
+      this.setState({menuOpen: false})
+    }
+
+
+  showSettings (event) {
     event.preventDefault();
   }
 
+  toggleServicesSubmenu () {
+    if (this.state.hideServicesSubmenu) {
+      this.setState({hideServicesSubmenu: false})
+    } else {
+      this.setState({hideServicesSubmenu: true})
+    }
+  }
+
+  hideSubMenu () {
+    this.setState({menuOpen: false})
+  }
+
+  closeMobileMenu () {
+
+  }
+
   render () {
+    let state = this.state
+
     return (
-        <Menu right>
-            <NavLink to="/" exact>
+        <Menu
+          isOpen={this.state.menuOpen}
+          onStateChange={(state) => this.handleStateChange(state)} right>
+            <NavLink to="/" onClick={this.hideSubMenu.bind(this)} exact>
                 Home
             </NavLink>
             <NavLink to="/about/" exact>
                 About
             </NavLink>
-            <NavLink className="services-mobile" to="/Services/" style={{cursor: 'default'}} exact>
+            <NavLink onClick={this.toggleServicesSubmenu.bind(this)} className="services-mobile" to="/Services/" style={{cursor: 'default'}} exact>
                 Services
                 <i class="fas fa-angle-down" />
-                <ul className="mobile-sub-menu">
+                <ul className={'mobile-sub-menu ' + (state.hideServicesSubmenu ? 'hide' : '')}>
                   <li>
                     <Link to="/ambulatory/">Ambulatory</Link>
                   </li>
