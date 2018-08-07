@@ -3,6 +3,13 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  background-color: var(--darkGrey);
+  color: white;
+  font-family: var(--font-museo);
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  height: 90px;
 }
 
 .PostCategoriesNav > * + * {

@@ -20,9 +20,7 @@ export const BlogIndexTemplate = ({
         title="Case Studies"
       />
 
-      {!!postCategories.length && (
-        <PostCategoriesNav categories={postCategories} />
-      )}
+      <PostCategoriesNav categories={postCategories} />
 
       {!!posts.length && <PostSection posts={posts} />}
     </main>
