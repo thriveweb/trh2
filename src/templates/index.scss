@@ -1,194 +1,200 @@
 .Home .BackgroundImage {
-    height: 760px;
+  height: 760px;
 }
 
 .Home .section--1 {
-    height: 760px;
+  height: 760px;
 }
 
 .Home {
+  .section--1 {
+    h1,
+    .big-body {
+      color: white;
+    }
+
+    .container-banner {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 95%;
+      max-width: auto;
+      top: 30%;
+    }
+
+    .inner {
+      width: 370px;
+      float: left;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .BackgroundImage {
+      height: 500px;
+    }
+
     .section--1 {
-        h1,
-        .big-body {
-            color: white;
-        }
+      height: 500px;
+    }
+    h4 {
+      font-size: 20px;
+    }
 
-        .container-banner {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 95%;
-            max-width: auto;
-            top: 30%;
-        }
+    .big-body {
+      line-height: 30px;
+    }
 
-        .inner {
-            width: 370px;
-            float: left;
-        }
+    .container-banner {
+      top: 10% !important;
+      width: 100% !important;
+    }
+
+    .inner {
+      width: 300px !important;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+
+  .section--2 {
+    .container {
+      max-width: 1000px;
+    }
+
+    h4 {
+      text-align: center;
+      color: var(--darkGrey);
+      font-family: var(--font-museo);
+    }
+  }
+
+  .section--3 {
+    @media (max-width: 1133px) {
+      .BackgroundImage {
+        height: 1000px;
+      }
+    }
+
+    @media (max-width: 849px) {
+      .BackgroundImage {
+        height: 1200px;
+      }
+    }
+
+    @media (max-width: 566px) {
+      .BackgroundImage {
+        height: 1950px;
+      }
+    }
+  }
+
+  .section--5 {
+    height: 645px;
+
+    .BackgroundImage {
+      height: 100%;
+    }
+
+    .subtitle {
+      color: #60646f;
+    }
+
+    h2 {
+      text-align: left;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-style: italic;
+      font-size: 24px;
+      color: #60646f;
+      font-weight: 500;
+      margin-left: 7rem;
+    }
+
+    .left {
+      width: 560px;
+    }
+
+    .right {
+      width: 560px;
+
+      .quote-mark {
+        position: absolute;
+        max-width: 60px;
+      }
+    }
+
+    .columnContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      flex: 1 100%;
+      width: 100%;
+    }
+
+    @media (max-width: 1231px) {
+      .left {
+        width: 100%;
+        margin-bottom: 4rem;
+      }
+
+      .right {
+        width: 100%;
+      }
+
+      .section {
+        padding: 50px 0px !important;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .BackgroundImage {
+        background-size: 0% !important;
+      }
+
+      height: 700px;
+    }
+
+    @media (max-width: 632px) {
+      height: 750px;
+    }
+
+    @media (max-width: 556px) {
+      height: 800px;
+    }
+
+    @media (max-width: 500px) {
+      height: 850px;
+    }
+
+    @media (max-width: 449px) {
+      h2 {
+        font-size: 35px;
+        line-height: 45px;
+      }
     }
 
     @media (max-width: 400px) {
-        .BackgroundImage {
-            height: 500px;
-        }
-
-        .big-body {
-            line-height: 30px;
-        }
-
-        .container-banner {
-            top: 10% !important;
-            width: 100% !important;
-        }
-
-        .inner {
-            width: 300px !important;
-        }
-
-        h1 {
-            font-size: 40px;
-            line-height: 45px;
-        }
+      p {
+        font-size: 16px;
+      }
     }
 
-    .section--2 {
-        .container {
-            max-width: 1000px;
-        }
+    @media (max-width: 437px) {
+      h3 {
+        font-size: 17px;
+        line-height: 24px;
+      }
 
-        h4 {
-            text-align: center;
-            color: var(--darkGrey);
-            font-family: var(--font-museo);
-        }
+      .subtitle {
+        font-size: 15px;
+        line-height: 22px;
+      }
     }
-
-    .section--3 {
-        @media (max-width: 1133px) {
-            .BackgroundImage {
-                height: 1000px;
-            }
-        }
-
-        @media (max-width: 849px) {
-            .BackgroundImage {
-                height: 1200px;
-            }
-        }
-
-        @media (max-width: 566px) {
-            .BackgroundImage {
-                height: 1950px;
-            }
-        }
-    }
-
-    .section--5 {
-        height: 645px;
-
-        .BackgroundImage {
-            height: 100%;
-        }
-
-        .subtitle {
-            color: #60646F;
-        }
-
-        h2 {
-            text-align: left;
-            font-weight: 700;
-        }
-
-        h3 {
-            font-style: italic;
-            font-size: 24px;
-            color: #60646F;
-            font-weight: 500;
-            margin-left: 7rem;
-        }
-
-        .left {
-            width: 560px;
-        }
-
-        .right {
-            width: 560px;
-
-            .quote-mark {
-                position: absolute;
-                max-width: 60px;
-            }
-        }
-
-        .columnContainer {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-flow: row wrap;
-            flex: 1 100%;
-            width: 100%;
-        }
-
-        @media (max-width: 1231px) {
-            .left {
-                width: 100%;
-                margin-bottom: 4rem;
-            }
-
-            .right {
-                width: 100%;
-            }
-
-            .section {
-                padding: 50px 0px !important;
-            }
-        }
-
-        @media (max-width: 800px) {
-
-            .BackgroundImage {
-                background-size: 0% !important;
-            }
-
-            height: 700px;
-
-        }
-
-        @media (max-width: 632px) {
-
-            height: 750px;
-
-        }
-
-        @media (max-width: 556px) {
-
-            height: 800px;
-
-        }
-
-        @media (max-width: 500px) {
-            height: 850px;
-        }
-
-        @media (max-width: 449px) {
-            h2 {
-                font-size: 35px;
-                line-height: 45px;
-            }
-        }
-
-        @media (max-width: 437px) {
-            h3 {
-                font-size: 20px;
-                line-height: 30px;
-            }
-
-            .subtitle {
-                font-size: 15px;
-                line-height: 22px;
-            }
-        }
-
-    }
+  }
 }

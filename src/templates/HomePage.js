@@ -1,6 +1,5 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import Link from 'gatsby-link'
-
 
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
@@ -47,7 +46,8 @@ export const HomePageTemplate = ({
       </section>
 
       <section className="section--3  section relative">
-        <Image background
+        <Image
+          background
           src={section3.backgroundImage}
           alt="background-image 2"
         />
@@ -63,7 +63,8 @@ export const HomePageTemplate = ({
       <Cta title={section4.title} subtitle={section4.subtitle} />
 
       <section className="section--5 section thick relative">
-        <Image background
+        <Image
+          background
           src={section5.backgroundImage}
           alt="background-image 4"
         />
@@ -104,8 +105,6 @@ export const HomePageTemplate = ({
             </section>
           )}
         </div>
-
-
       </section>
     </main>
   </Fragment>
