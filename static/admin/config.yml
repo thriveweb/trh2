@@ -197,7 +197,7 @@ collections: # A list of collections the CMS should be able to edit
     label: Service Single Page
     editor:
       preview: true
-    folder: content/infoPages
+    folder: content/services
     create: true # Allow users to create new documents in this collection
     fields:
       - {label: Template, name: template, widget: hidden, default: DefaultPage}
@@ -218,7 +218,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Content, name: content, widget: markdown}
-          
+
 
   - name: posts
     label: Post
