@@ -249,11 +249,17 @@ collections: # A list of collections the CMS should be able to edit
             valueField: "title"
 
       - label: Accordion
-        name: accordion:
+        name: accordion
         widget: list
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Content, name: content, widget: markdown}
+
+      - label: Gallery
+        name: gallery
+        widget: list
+        fields:
+          - {label: Image, name: image, widget: image
 
 
       - label: "Meta"
