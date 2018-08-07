@@ -75,7 +75,7 @@ export const HomePageTemplate = ({
               <h2>{section5.title}</h2>
               <Content src={section5.content} />
 
-              <Link className="Button Button--inverted" to="/Conact">
+              <Link className="Button Button--inverted" to="/contact">
                 More About Us
               </Link>
             </div>
