@@ -36,7 +36,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Title, name: title, widget: string}
               - {label: Subtitle, name: subtitle, widget: string}
               - {label: Phone, name: phone, widget: string}
-              - {label: Email, name: email, widget: string}                
+              - {label: Email, name: email, widget: string}
 
 
 
@@ -247,6 +247,15 @@ collections: # A list of collections the CMS should be able to edit
             collection: "postCategories"
             searchFields: ["title"]
             valueField: "title"
+
+      - label: Accordion
+        name: accordion:
+        widget: list
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}
+
+
       - label: "Meta"
         required: false
         name: "meta"

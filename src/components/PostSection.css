@@ -33,6 +33,10 @@
   line-height: 1.2;
 }
 
+button {
+  margin-top: 3rem;
+}
+
 @media screen and (max-width: 750px) {
   .PostSection .PostCard {
     width: 100%;
