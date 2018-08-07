@@ -172,9 +172,15 @@ export const pageQuery = graphql`
           title
         }
         gallery {
-          image {
+          imageBefore {
             ...FluidImage
           }
+          title
+          imageAfter {
+            ...FluidImage
+          }
+          subtitle
+          link
         }
       }
     }

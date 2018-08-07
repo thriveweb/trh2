@@ -63,8 +63,9 @@ section6:
   title: Our Medical Cases
 
 gallery:
-  - image: /images/uploads/partnerlogo-1.png
-  - image: /images/uploads/partnerlogo-2.png
-  - image: /images/uploads/partnerlogo-3.png
-  - image: /images/uploads/partnerlogo-4.png
+  - imageBefore: /images/uploads/beforephoto.jpg
+    imageAfter: /images/uploads/imageafter.jpg
+    title: Float Injury
+    subtitle: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueipsa
+    link: /posts/case-1/
 ---

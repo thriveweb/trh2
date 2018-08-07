@@ -187,7 +187,11 @@ collections: # A list of collections the CMS should be able to edit
             name: gallery
             widget: list
             fields:
-              - {label: Image, name: image, widget: image}
+              - {label: Before Image, name: imageBefore, widget: image}
+              - {label: After Image, name: imageAfter, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Link to Case, name: link, widget: string}            
 
 
 
