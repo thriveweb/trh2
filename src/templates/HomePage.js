@@ -100,7 +100,7 @@ export const HomePageTemplate = ({
           {gallery.length && (
             <section className="Centre--Gallery">
               <div className="container taCenter">
-                <homeGallery homeGallery={gallery} />
+                <HomeGallery homeGallery={gallery} />
               </div>
             </section>
           )}
