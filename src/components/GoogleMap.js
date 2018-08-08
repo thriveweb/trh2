@@ -6,7 +6,7 @@ import './GoogleMap.css'
 
 export default class GoogleMap extends Component {
   static defaultProps = {
-    apiKey: '',
+    apiKey: 'AIzaSyD-7fHzppu6AIoPFGO6hjFAuw40yyscbEo',
     lat: -28.078287,
     lng: 153.444221,
     zoom: 15,
@@ -18,7 +18,7 @@ export default class GoogleMap extends Component {
   mapElement = null
   map = null
 
-  componentDidMount () {
+  componentDidMount() {
     window.initMap = this.initMap
     if (window.google) this.initMap()
     this.addListeners()
@@ -45,18 +45,202 @@ export default class GoogleMap extends Component {
   initMap = () => {
     const google = window.google
     const { lat, lng, zoom, disableDefaultUI } = this.props
-    const styles = JSON.parse(this.props.styles)
     const center = { lat, lng }
     const map = new google.maps.Map(this.mapElement, {
       zoom,
       disableDefaultUI,
-      styles
+      styles: [
+        {
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#212121'
+            }
+          ]
+        },
+        {
+          elementType: 'labels.icon',
+          stylers: [
+            {
+              visibility: 'off'
+            }
+          ]
+        },
+        {
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#757575'
+            }
+          ]
+        },
+        {
+          elementType: 'labels.text.stroke',
+          stylers: [
+            {
+              color: '#212121'
+            }
+          ]
+        },
+        {
+          featureType: 'administrative',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#757575'
+            }
+          ]
+        },
+        {
+          featureType: 'administrative.country',
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#9e9e9e'
+            }
+          ]
+        },
+        {
+          featureType: 'administrative.land_parcel',
+          stylers: [
+            {
+              visibility: 'off'
+            }
+          ]
+        },
+        {
+          featureType: 'administrative.locality',
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#bdbdbd'
+            }
+          ]
+        },
+        {
+          featureType: 'poi',
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#757575'
+            }
+          ]
+        },
+        {
+          featureType: 'poi.park',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#181818'
+            }
+          ]
+        },
+        {
+          featureType: 'poi.park',
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#616161'
+            }
+          ]
+        },
+        {
+          featureType: 'poi.park',
+          elementType: 'labels.text.stroke',
+          stylers: [
+            {
+              color: '#1b1b1b'
+            }
+          ]
+        },
+        {
+          featureType: 'road',
+          elementType: 'geometry.fill',
+          stylers: [
+            {
+              color: '#2c2c2c'
+            }
+          ]
+        },
+        {
+          featureType: 'road',
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#8a8a8a'
+            }
+          ]
+        },
+        {
+          featureType: 'road.arterial',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#373737'
+            }
+          ]
+        },
+        {
+          featureType: 'road.highway',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#3c3c3c'
+            }
+          ]
+        },
+        {
+          featureType: 'road.highway.controlled_access',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#4e4e4e'
+            }
+          ]
+        },
+        {
+          featureType: 'road.local',
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#616161'
+            }
+          ]
+        },
+        {
+          featureType: 'transit',
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#757575'
+            }
+          ]
+        },
+        {
+          featureType: 'water',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#000000'
+            }
+          ]
+        },
+        {
+          featureType: 'water',
+          elementType: 'labels.text.fill',
+          stylers: [
+            {
+              color: '#3d3d3d'
+            }
+          ]
+        }
+      ]
     })
     // pan offset
     const icon = this.props.icon
       ? {
-        url: this.props.icon
-      }
+          url: this.props.icon
+        }
       : ''
     this.marker = new google.maps.Marker({
       position: center,
@@ -69,9 +253,9 @@ export default class GoogleMap extends Component {
     this.addListeners()
   }
 
-  render () {
+  render() {
     return (
-      <div className='GoogleMap--Wrap'>
+      <div className="GoogleMap--Wrap">
         <Helmet>
           <script
             async
@@ -82,7 +266,7 @@ export default class GoogleMap extends Component {
           />
         </Helmet>
         <div
-          className='GoogleMap'
+          className="GoogleMap"
           ref={el => {
             this.mapElement = el
           }}

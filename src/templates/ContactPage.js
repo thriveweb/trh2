@@ -2,10 +2,10 @@ import React, { Fragment } from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-
 import PageHeader from '../components/PageHeader'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
 import Image from '../components/Image'
+import GoogleMap from '../components/GoogleMap'
 
 import './contact.scss'
 
@@ -61,6 +61,8 @@ export const ContactPageTemplate = ({ header, contactSection1 }) => (
             <EnquiryFormSimpleAjax />
           </div>
         </div>
+
+        <GoogleMap />
       </section>
     </main>
   </Fragment>
