@@ -191,7 +191,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: After Image, name: imageAfter, widget: image}
               - {label: Title, name: title, widget: string}
               - {label: Subtitle, name: subtitle, widget: string}
-              - {label: Link to Case, name: link, widget: string}            
+              - {label: Link to Case, name: link, widget: string}
 
 
 
@@ -222,6 +222,22 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Content, name: content, widget: markdown}
+
+      - label: Section 2
+        name: section2
+        widget: object
+        fields:
+          - {label: Title, name: title, widget: string}
+
+      - label: Gallery
+        name: gallery
+        widget: list
+        fields:
+          - {label: Before Image, name: imageBefore, widget: image}
+          - {label: After Image, name: imageAfter, widget: image}
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Link to Case, name: link, widget: string}
 
 
   - name: posts
