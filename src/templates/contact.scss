@@ -1,4 +1,10 @@
 .contact-section--1 {
+  padding-bottom: 0;
+
+  .container {
+    margin-bottom: 70px;
+  }
+
   .flex {
     align-items: baseline;
     justify-content: space-between;
