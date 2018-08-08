@@ -11,32 +11,45 @@ export const BlogIndexTemplate = ({
   title,
   subtitle,
   posts = [],
-  postCategories = []
-}) => (
-  <Fragment>
-    <main className="Blog">
-      <PageHeader
-        backgroundImage="/images/uploads/case-studies--header.jpg"
-        title="Case Studies"
-      />
+  postCategories = [],
+  contentType
+}) => {
+  const isCategory = contentType === 'postCategories'
+  const byCategory = post =>
+    post.categories &&
+    post.categories.filter(cat => cat.category === title).length
+  console.log(isCategory)
+  const filteredPosts = isCategory ? posts.filter(byCategory) : posts
 
-      <PostCategoriesNav categories={postCategories} />
+  return (
+    <Fragment>
+      <main className="Blog">
+        <PageHeader
+          backgroundImage="/images/uploads/case-studies--header.jpg"
+          title="Case Studies"
+        />
 
-      {!!posts.length && <PostSection posts={posts} />}
-    </main>
-  </Fragment>
-)
+        <PostCategoriesNav categories={postCategories} />
+        {!!posts.length && <PostSection posts={filteredPosts} />}
+      </main>
+    </Fragment>
+  )
+}
 
 // Export Default BlogIndex for front-end
 const BlogIndex = ({ data }) => {
-  const { page, posts } = data
+  const { page, posts, postCategories } = data
   return (
     <BlogIndexTemplate
-      title={page.frontmatter.title}
-      subtitle={page.frontmatter.subtitle}
-      featuredImage={page.frontmatter}
       // pull frontmatter to root of post
+      {...page.fields}
+      {...page.frontmatter}
       posts={posts.edges.map(post => ({
+        ...post.node,
+        ...post.node.frontmatter,
+        ...post.node.fields
+      }))}
+      postCategories={postCategories.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
         ...post.node.fields
@@ -59,6 +72,9 @@ export const pageQuery = graphql`
         template
         subtitle
       }
+      fields {
+        contentType
+      }
     }
 
     posts: allMarkdownRemark(
@@ -79,6 +95,21 @@ export const pageQuery = graphql`
             categories {
               category
             }
+          }
+        }
+      }
+    }
+    postCategories: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "postCategories" } } }
+      sort: { order: ASC, fields: [frontmatter___title] }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
           }
         }
       }
