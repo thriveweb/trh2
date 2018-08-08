@@ -14,7 +14,6 @@ import 'react-accessible-accordion/dist/fancy-example.css'
 
 class AccordionRepeater extends Component {
   render() {
-
     const accordion = this.props.accordion || []
 
     return (
@@ -28,9 +27,11 @@ class AccordionRepeater extends Component {
               <AccordionItemBody className="accordion-item--body">
                 <p>{list.content}</p>
 
-                <Link className="Button" to={list.link}>
-                  Download PDF
-                </Link>
+                {list.link && (
+                  <a className="Button" href={list.link.publicURL}>
+                    Download PDF
+                  </a>
+                )}
               </AccordionItemBody>
             </AccordionItem>
           )

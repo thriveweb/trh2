@@ -12,7 +12,13 @@ import HomeGallery from '../components/HomeGallery'
 import './SingleService.scss'
 
 // Export Template for use in CMS preview
-export const SingleServiceTemplate = ({ title, serviceIntro, accordion, section2, gallery = [] }) => (
+export const SingleServiceTemplate = ({
+  title,
+  serviceIntro,
+  accordion,
+  section2,
+  gallery = []
+}) => (
   <Fragment>
     <main className="ServicesPage">
       <PageHeader
@@ -32,9 +38,7 @@ export const SingleServiceTemplate = ({ title, serviceIntro, accordion, section2
           icon={serviceIntro.icon}
         />
 
-        <AccordionRepeater
-          accordion={accordion}
-        />
+        <AccordionRepeater accordion={accordion} />
       </section>
 
       <Cta
@@ -79,7 +83,9 @@ export const pageQuery = graphql`
         accordion {
           title
           content
-          link
+          link {
+            publicURL
+          }
         }
         section2 {
           title

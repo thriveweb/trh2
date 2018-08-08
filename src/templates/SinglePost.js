@@ -24,7 +24,7 @@ export const SinglePostTemplate = ({
   gallery = []
 }) => (
   <Fragment>
-  <PageHeader
+    <PageHeader
       backgroundImage="/images/uploads/singlepost-banner.jpg"
       title={title}
     />
@@ -80,7 +80,7 @@ export const SinglePostTemplate = ({
         />
       </div>
     </article>
-</Fragment>
+  </Fragment>
 )
 
 // Export Default SinglePost for front-end
@@ -118,7 +118,9 @@ export const pageQuery = graphql`
         accordion {
           title
           content
-          link
+          link {
+            publicURL
+          }
         }
         gallery {
           image {
