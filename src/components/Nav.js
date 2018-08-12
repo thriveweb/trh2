@@ -25,7 +25,7 @@ export default ({ handlePopupOpen }) => (
         <NavLink to="/about/" exact>
           About
         </NavLink>
-        <NavLink className="services" to="" exact>
+        <NavLink className="services" exact>
           Services <i class="fas fa-angle-down" />
           <ul className="sub-menu">
             <li>

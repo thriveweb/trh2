@@ -60,42 +60,42 @@ class Hamburger extends Component {
             <NavLink to="/" onClick={this.hideSubMenu.bind(this)} exact>
                 Home
             </NavLink>
-            <NavLink to="/about/" exact>
+            <NavLink to="/about/" onClick={this.hideSubMenu.bind(this)} exact>
                 About
             </NavLink>
-            <NavLink onClick={this.toggleServicesSubmenu.bind(this)} className="services-mobile" to="/Services/" style={{cursor: 'default'}} exact>
+            <NavLink onClick={this.toggleServicesSubmenu.bind(this)} className="services-mobile" style={{cursor: 'default'}} exact>
                 Services
                 <i class="fas fa-angle-down" />
                 <ul className={'mobile-sub-menu ' + (state.hideServicesSubmenu ? 'hide' : '')}>
                   <li>
-                    <Link to="/ambulatory/">Ambulatory</Link>
+                    <Link to="/ambulatory/" onClick={this.hideSubMenu.bind(this)}>Ambulatory</Link>
                   </li>
                   <li>
-                    <Link to="/treatment/">Treatment</Link>
+                    <Link to="/treatment/" onClick={this.hideSubMenu.bind(this)}>Treatment</Link>
                   </li>
                   <li>
-                    <Link to="/lameness-evaluation/">Lameness Evaluation</Link>
+                    <Link to="/lameness-evaluation/" onClick={this.hideSubMenu.bind(this)}>Lameness Evaluation</Link>
                   </li>
                   <li>
-                    <Link to="/performance-assessment/">
+                    <Link to="/performance-assessment/" onClick={this.hideSubMenu.bind(this)}>
                       Poor Performance Assessment
                     </Link>
                   </li>
                   <li>
-                    <Link to="/routine-surgery/">Routine Surgery</Link>
+                    <Link to="/routine-surgery/" onClick={this.hideSubMenu.bind(this)}>Routine Surgery</Link>
                   </li>
                   <li>
-                    <Link to="/diagnostics/">Diagnostics - Radiography</Link>
+                    <Link to="/diagnostics/" onClick={this.hideSubMenu.bind(this)}>Diagnostics - Radiography</Link>
                   </li>
                   <li>
-                    <Link to="/examinations/">Pre-Purchase Examinations</Link>
+                    <Link to="/examinations/" onClick={this.hideSubMenu.bind(this)}>Pre-Purchase Examinations</Link>
                   </li>
                 </ul>
             </NavLink>
-            <NavLink to="/CaseStudies/" exact>
+            <NavLink to="/case-studies/" onClick={this.hideSubMenu.bind(this)} exact>
                 Case Studies
             </NavLink>
-            <NavLink to="/contact/" exact>
+            <NavLink to="/contact/" onClick={this.hideSubMenu.bind(this)} exact>
                 Contact
             </NavLink>
 

@@ -85,6 +85,11 @@ span.bm-cross{
 
 .services-mobile {
   position: relative;
+  color: white !important;
+}
+
+.services-mobile:hover {
+  color: var(--orange) !important;
 }
 
 .hide {
