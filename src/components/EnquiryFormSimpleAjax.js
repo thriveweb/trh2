@@ -128,10 +128,9 @@ class Form extends React.Component {
                 type="file"
                 placeholder="Upload your CV"
                 name="upload-cv"
-                onChange={event => this.handleUpload(event, 'resume')}
+                onChange={event => this.handleUpload(event, 'file')}
                 required
               />
-              {this.state.resume && <p>{this.state.resume}</p>}
             </label>
           </div>
 

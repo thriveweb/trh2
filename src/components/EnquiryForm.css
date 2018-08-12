@@ -77,10 +77,12 @@
 }
 
 .EnquiryForm--Alert {
-  background: var(--lightGrey);
+  background: var(--blue);
   width: 100%;
   text-align: center;
   padding: 2rem;
+  color: white;
+  font-family: var(--font-museoSans);
 }
 
 .file-download-EnquiryForm--Input {
