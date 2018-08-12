@@ -11,7 +11,7 @@ export default class GoogleMap extends Component {
     lng: 153.444221,
     zoom: 15,
     disableDefaultUI: false,
-    icon: '',
+    icon: '/images/uploads/map_icon.png',
     styles: {}
   }
 
@@ -42,7 +42,10 @@ export default class GoogleMap extends Component {
     this.map.panBy(window.innerWidth / 5, 0)
   }
 
+
+
   initMap = () => {
+
     const google = window.google
     const { lat, lng, zoom, disableDefaultUI } = this.props
     const center = { lat, lng }
