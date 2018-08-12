@@ -12,3 +12,10 @@ contactSection1:
   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
   phone: 0417 292 705
   email: tim@trhequinevets.com.au
+
+contactSection2:
+  address: Address line goes here, Ut enim ad minim veniam Gold Coast, 4215, QLD
+  openingHours: |-
+    Mon-Fri: 8am - 5pm
+    Sat: 8am-3pm
+  parkingInfo: Information goes here

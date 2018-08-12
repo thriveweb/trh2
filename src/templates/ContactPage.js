@@ -10,7 +10,7 @@ import GoogleMap from '../components/GoogleMap'
 import './contact.scss'
 
 // Export Template for use in CMS preview
-export const ContactPageTemplate = ({ header, contactSection1 }) => (
+export const ContactPageTemplate = ({ header, contactSection1, contactSection2 }) => (
   <Fragment>
     <main className="Contact">
       <PageHeader
@@ -62,7 +62,18 @@ export const ContactPageTemplate = ({ header, contactSection1 }) => (
           </div>
         </div>
 
-        <GoogleMap />
+        <section className="contact-section--2">
+          <div className="white-sqaure">
+            <h4>Find us here</h4>
+            <p>{contactSection2.address}</p>
+            <h4>Open hours</h4>
+            <p>{contactSection2.openingHours}</p>
+            <h4>Parking</h4>
+            <p>{contactSection2.parkingInfo}</p>
+          </div>
+          <GoogleMap />
+        </section>
+
       </section>
     </main>
   </Fragment>
@@ -90,6 +101,11 @@ export const pageQuery = graphql`
           subtitle
           phone
           email
+        }
+        contactSection2 {
+          address
+          openingHours
+          parkingInfo
         }
       }
     }
