@@ -94,10 +94,10 @@ export const pageQuery = graphql`
           imageBefore {
             ...FluidImage
           }
-          title
           imageAfter {
             ...FluidImage
           }
+          title
           subtitle
           link
         }
