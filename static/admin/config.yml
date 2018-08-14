@@ -37,8 +37,14 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Subtitle, name: subtitle, widget: string}
               - {label: Phone, name: phone, widget: string}
               - {label: Email, name: email, widget: string}
-
-
+          - label: Contact Section 2
+            name: contactSection2
+            widget: "object"
+            fields:
+              - {label: Address, name: address, widget: string}
+              - {label: Opening Hours, name: openingHours, widget: markdown}
+              - {label: Phone, name: phone, widget: string}
+              - {label: Parking Info, name: parkingInfo, widget: string}              
 
       - file: "content/pages/blog.md"
         label: "Blog Page"
