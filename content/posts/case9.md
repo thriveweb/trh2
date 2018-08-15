@@ -4,7 +4,8 @@ template: SinglePost
 status: Published
 date: '2018-05-24'
 featuredImage: /images/uploads/case-study--2.jpg
-excerpt: This is placeholder text that our web designers put here to make sure words appear properly on your website. This text is going to be replaced once the website is completed. You are currently reading text that is written in English, not any other language.
+excerpt:
+  This is placeholder text that our web designers put here to make sure words appear properly on your website. This text is going to be replaced once the website is completed. You are currently reading text that is written in English, not any other language.
 
 accordion:
   - title: Sed pretium, felis in bibendum suscipit, ante ligula commodo nisl?
@@ -14,7 +15,7 @@ accordion:
       Etiam eu sem lorem. In ac porta purus, in sagittis dui. Sed pretium, felis in bibendum suscipit, ante ligula commodo nisl, non posuere nulla ipsum nec libero. Phasellus porta volutpat tortor, at bibendum. Laudantium, totam rem aperiam.
 
       Curabitur quis efficitur mi, sit amet consectetur ipsum.
-    link: /
+    link: /images/uploads/service-icon-1.svg
   - title: 7hu7yhy?
     content: |-
       Intro to service pellentesque porta nibh vestibulum malesuada mattis. Curabitur neque enim, dignissim eget dapibus a, cursus id ex. Nunc eu laoreet magna, non sodales ex.
@@ -22,7 +23,7 @@ accordion:
       Etiam eu sem lorem. In ac porta purus, in sagittis dui. Sed pretium, felis in bibendum suscipit, ante ligula commodo nisl, non posuere nulla ipsum nec libero. Phasellus porta volutpat tortor, at bibendum. Laudantium, totam rem aperiam.
 
       Curabitur quis efficitur mi, sit amet consectetur ipsum.
-    link: /
+    link: /images/uploads/service-icon-1.svg
 
 gallery:
   - image: /images/uploads/case-slider-1.jpg
