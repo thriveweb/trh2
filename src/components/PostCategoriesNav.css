@@ -1,7 +1,7 @@
 .PostCategoriesNav {
   display: flex;
   align-items: center;
-  justify-content: justify-content;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: var(--darkGrey);
   color: white;
