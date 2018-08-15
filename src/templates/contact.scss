@@ -76,16 +76,25 @@
 
   .white-sqaure {
     position: absolute;
-    top: -99px;
+    top: -80px;
     left: 221px;
     padding: 3rem;
     max-width: 400px;
-    box-shadow: 0 5px 30px 0 rgba(96,100,111,0.25);
+    -webkit-box-shadow: 0 5px 30px 0 rgba(96, 100, 111, 0.25);
+    box-shadow: 0 5px 30px 0 rgba(96, 100, 111, 0.25);
     border-radius: 8px;
+    z-index: 9999999;
+    background: white;
 
     h4 {
       font-family: var(--font-museo);
       font-size: 24px;;
+    }
+  }
+
+  @media (max-width: 775px) {
+    .white-sqaure {
+      display: none;
     }
   }
 }
