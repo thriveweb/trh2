@@ -8,12 +8,10 @@ header:
 contactSection1:
   email: tim@trhequinevets.com.au
   phone: 0417 292 705
-  subtitle: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore
+  subtitle: ''
   title: Get in touch
 contactSection2:
-  address: '15 Ken Russell Ct, Bundall QLD 4217'
+  address: 130 Tarata Road Guanaba QLD
   openingHours: |-
     Mon-Fri: 8am - 5pm
     Sat: 8am-3pm
