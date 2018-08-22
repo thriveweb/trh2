@@ -3,7 +3,7 @@ template: HomePage
 slug: ''
 title: TRH Equine Vets
 section1:
-  heroImage: /images/uploads/background-image-1.png
+  heroImage: /images/uploads/img_7373.jpg
   subtitle: >-
     Brief mission statement goes here lorem ipsum dolor sit amed dolore eu
     fugiat nulla pariatu.
