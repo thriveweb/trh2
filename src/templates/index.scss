@@ -37,6 +37,12 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
     }
 
+    @media (max-width: 600px) {
+      .BackgroundImage:before {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
     h1,
     .big-body {
       color: white;
