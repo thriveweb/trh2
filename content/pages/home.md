@@ -3,17 +3,17 @@ template: HomePage
 slug: ''
 title: TRH Equine Vets
 section1:
-  heroImage: /images/uploads/case-slider-1.jpg
+  heroImage: /images/uploads/img_7373.jpg
   subtitle: >-
     Brief mission statement goes here lorem ipsum dolor sit amed dolore eu
-    fugiat nulla pariatu.
-  title: Mobile Horse Diagnostics
+    fugiat nulla pariastu.
+  title: Mobile Horse Diagnosticss
 section2:
   content: >-
-    TRH Equine Vets offers a full range of equine medical and surgical services.
-    Our team of veterinarians is trained to conduct everything from general
-    health and wellness exams to intensive care and diagnostic services for your
-    horses.
+    TRH Equine Vets offers a full range of equine medical and surgical
+    servicess. Our team of veterinarians is trained to conduct everything from
+    general health and wellness exams to intensive care and diagnostic services
+    for your horses.
 section3:
   backgroundImage: /images/uploads/background-image-2.jpg
   singleService:
@@ -45,12 +45,12 @@ section3:
       hoverIcon: /images/uploads/icon-5-hover.svg
       link: /examinations
       name: Pre-Purchase Examinations
-  title: Our Services
+  title: Our Servicess
 section4:
   subtitle: >-
-    We are a mobile diagnostics servicing from Mudgeeraba to Beaudesert on a
+    We are a mobile diagnostics servicing from Mudgeeraba to Beaudesert ons a
     basic call out fee.
-  title: For all Your Horse Needs Please Give Us a Call
+  title: For all Your Horse Needs Please Give Us a Calls
 section5:
   backgroundImage: /images/uploads/background-image-4.jpg
   content: >-
@@ -58,7 +58,7 @@ section5:
     doloremque laudantium, totam rem.
 
 
-    Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+    Totam rem aperiam, eaque ipsa quae ab illso inventore veritatis et quasi
     architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
     quia voluptas sit aspernatur aut odit aut fugit, sedquiaconsequuntur magni
     dolores eos qui ratione voluptatem sequi nesciunt.
@@ -66,9 +66,9 @@ section5:
 
     Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
   quote: >-
-    Neque porro quisquam est. Ut enim ad minima veniam, quis nostrum
+    Neque porro quisquam est. Ut enim ad minima sveniam, quis nostrum
     exercitationem ullam corporis suscipit laboriosam.
-  title: Brief Mission Statement Goes Here
+  title: Brief Mission Statement Goes Heres
 section6:
   title: Our Medical Cases
 gallery:
