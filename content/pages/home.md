@@ -4,9 +4,7 @@ slug: ''
 title: TRH Equine Vets
 section1:
   heroImage: /images/uploads/img_7373.jpg
-  subtitle: >-
-    Brief mission statement goes here lorem ipsum dolor sit amed dolore eu
-    fugiat nulla pariastu.
+  subtitle: Dedicated to providing the best quality of care to you and your equine
   title: Mobile Horse Diagnosticss
 section2:
   content: >-
@@ -48,9 +46,9 @@ section3:
   title: Our Servicess
 section4:
   subtitle: >-
-    We are a mobile diagnostics servicing from Mudgeeraba to Beaudesert ons a
+    We are a mobile diagnostics servicing from Mudgeeraba to Beaudesert on a
     basic call out fee.
-  title: For all Your Horse Needs Please Give Us a Calls
+  title: For all your equine veterinary needs please contact our team
 section5:
   backgroundImage: /images/uploads/img_7370.jpg
   content: >-
@@ -68,7 +66,7 @@ section5:
   quote: >-
     Neque porro quisquam est. Ut enim ad minima sveniam, quis nostrum
     exercitationem ullam corporis suscipit laboriosam.
-  title: Brief Mission Statement Goes Heres
+  title: Our Mission
 section6:
   title: Our Medical Cases
 gallery:
