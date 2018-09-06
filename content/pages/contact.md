@@ -13,6 +13,6 @@ contactSection1:
 
 contactSection2:
   address: 130 Tarata Road Guanaba QLD
-  openingHours: Mon-Fri: 8am - 5pm Sat: 8am-3pm
+  openingHours: ''
   parkingInfo: Information goes here
 ---
