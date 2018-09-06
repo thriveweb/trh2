@@ -52,7 +52,7 @@ section4:
     basic call out fee.
   title: For all Your Horse Needs Please Give Us a Calls
 section5:
-  backgroundImage: /images/uploads/background-image-4.jpg
+  backgroundImage: /images/uploads/img_7370.jpg
   content: >-
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
     doloremque laudantium, totam rem.
@@ -80,3 +80,4 @@ gallery:
       doloremque laudantium, totam rem aperiam, eaqueipsa
     title: Float Injury
 ---
+
