@@ -1,6 +1,6 @@
 import React from 'react'
 import Swiper from 'react-id-swiper/lib/custom'
-import 'react-id-swiper/src/styles/css/swiper.css'
+// import 'react-id-swiper/src/styles/css/swiper.css'
 import Link from 'gatsby-link'
 
 import Image from './Image'
