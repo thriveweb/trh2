@@ -52,19 +52,17 @@ section4:
 section5:
   backgroundImage: /images/uploads/img_7370.jpg
   content: >-
-    Our mission is to provide and promote the highest quality of veterinary care
-    to our patients through excellence in veterinary medicine and unprecedented
-    medical standards while providing our clients with the education and
-    assistance in all aspects of equine care. 
+    Is to provide and promote the highest quality of veterinary care to our
+    patients through excellence in veterinary medicine and unprecedented medical
+    standards, while providing our clients with the education and assistance in
+    all aspects of equine care. 
 
 
     We pride ourselves in the knowledge that treating owners and their horses,
     with the upmost respect, honesty and compassion as if they were our own
     family.
-  quote: >-
-    Neque porro quisquam est. Ut enim ad minima sveniam, quis nostrum
-    exercitationem ullam corporis suscipit laboriosam.
-  title: Our Mission
+  quote: ''
+  title: Our Vision
 section6:
   title: Our Medical Cases
 gallery:
