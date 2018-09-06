@@ -52,7 +52,7 @@ section4:
 section5:
   backgroundImage: /images/uploads/img_7370.jpg
   content: >-
-    Our mission to to provide and promote the highest quality of veterinary care
+    Our mission is to provide and promote the highest quality of veterinary care
     to our patients through excellence in veterinary medicine and unprecedented
     medical standards while providing our clients with the education and
     assistance in all aspects of equine care. 
