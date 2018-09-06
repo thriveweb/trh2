@@ -72,12 +72,11 @@ section5:
 section6:
   title: Our Medical Cases
 gallery:
-  - imageAfter: ''
-    imageBefore: ''
+  - imageAfter: /images/uploads/imageafter.jpg
+    imageBefore: /images/uploads/beforephoto.jpg
     link: /posts/case-1/
     subtitle: >-
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam, eaqueipsa
     title: Float Injury
 ---
-
