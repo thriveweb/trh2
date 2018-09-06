@@ -52,17 +52,13 @@ section4:
 section5:
   backgroundImage: /images/uploads/img_7370.jpg
   content: >-
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-    doloremque laudantium, totam rem.
+    Our mission to to provide the highest quality of care to our patients while
+    providing our clients with the education and assistance in all aspects of
+    equine care. 
 
 
-    Totam rem aperiam, eaque ipsa quae ab illso inventore veritatis et quasi
-    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-    quia voluptas sit aspernatur aut odit aut fugit, sedquiaconsequuntur magni
-    dolores eos qui ratione voluptatem sequi nesciunt.
-
-
-    Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+    We pride ourselves in the knowledge that treating owners and their horses
+    with the upmost respect, honesty and compassion as if they were our own.
   quote: >-
     Neque porro quisquam est. Ut enim ad minima sveniam, quis nostrum
     exercitationem ullam corporis suscipit laboriosam.
