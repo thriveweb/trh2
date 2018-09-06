@@ -4,7 +4,7 @@ slug: contact
 title: Contact
 header:
   heroImage: /images/uploads/contact-header-image.png
-  title: ''
+  title: Contact
 contactSection1:
   email: ''
   phone: ''
@@ -15,4 +15,3 @@ contactSection2:
   openingHours: ''
   parkingInfo: ''
 ---
-
