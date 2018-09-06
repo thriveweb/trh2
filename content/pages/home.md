@@ -72,8 +72,8 @@ section5:
 section6:
   title: Our Medical Cases
 gallery:
-  - imageAfter: /images/uploads/imageafter.jpg
-    imageBefore: /images/uploads/beforephoto.jpg
+  - imageAfter: ''
+    imageBefore: ''
     link: /posts/case-1/
     subtitle: >-
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
