@@ -48,6 +48,10 @@ export default ({ children, data }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+        />
       </Helmet>
 
       <Meta

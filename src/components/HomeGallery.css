@@ -65,7 +65,9 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--orange);
+  background: var(--orange) !important;
+  width: 13px !important;
+  height: 13px !important;
 }
 
 .swiper-slide {
