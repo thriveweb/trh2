@@ -135,9 +135,12 @@
       ul {
         list-style: none;
         display: flex;
-        align-items: center;
         margin-top: 40px;
-        justify-content: center;
+        justify-content: space-between;
+
+        li {
+          width: 45%;
+        }
 
         .service-title {
           color: #333742;
@@ -149,12 +152,11 @@
         }
 
         .subtitle {
-          width: 380px;
           padding-left: 2rem;
         }
 
-        .vet-image {
-          width: 380px;
+        img {
+          max-width: 100%;
         }
       }
     }

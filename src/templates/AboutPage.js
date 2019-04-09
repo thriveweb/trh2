@@ -99,15 +99,18 @@ export const AboutPageTemplate = ({
                 <p className="service-title">{aboutSection3.vetName2}</p>
                 <p className="subtitle">{aboutSection3.vetDescription2}</p>
               </li>
-              <li>
-                <Image
-                  className="vet-image"
-                  src={aboutSection3.vetImage3}
-                  alt="vet staff"
-                />
-                <p className="service-title">{aboutSection3.vetName3}</p>
-                <p className="subtitle">{aboutSection3.vetDescription3}</p>
-              </li>
+
+              {!!aboutSection3.vetName3 && (
+                <li>
+                  <Image
+                    className="vet-image"
+                    src={aboutSection3.vetImage3}
+                    alt="vet staff"
+                  />
+                  <p className="service-title">{aboutSection3.vetName3}</p>
+                  <p className="subtitle">{aboutSection3.vetDescription3}</p>
+                </li>
+              )}
             </ul>
           </div>
         </div>
@@ -126,9 +129,7 @@ export const AboutPageTemplate = ({
         {gallery.length && (
           <section className="Centre--Gallery">
             <div className="container taCenter">
-              <Gallery
-                gallery={gallery}
-              />
+              <Gallery gallery={gallery} />
             </div>
           </section>
         )}
