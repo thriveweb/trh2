@@ -7,20 +7,8 @@ serviceIntro:
   subtitle: "Platelet rich plasma is a therapy for the treatment of equine joint, tendon, ligament and bursae injuries. It is a welcome addition to the range of therapies available to treat these injuries because it offers an affordable, practical and scientifically based point of care treatment alternative to horse owners and trainers alike. Platelets are small cell fragments that circulate in the blood. A sample of blood is taken from the horse  and processed to increase the number of platelets and growth factors it contains. This is done by passing the blood through a filter.  The PRP sample can be ready to inject into the horse within 30 minutes after taking the blood sample. \r\n\nPlatelets release a large number of growth factors when they arrive at a site of tissue injury, including platelet-derived growth factor (PDGF), transforming growth factor beta (TGF-beta), insulin-like growth factors (IGF), vascular endothelial growth factor (VEGF) and connective tissue growth factor (CTGF) that are known to orchestrate the movements of other cells and stimulate the production of repair tissue (extracellular matrix). This aids in speeding the recovery process and improves the end result."
   title: 'Platelet Rich Plasma (PRP) '
 accordion:
-  - content: >-
-      Intro to service pellentesque porta nibh vestibulum malesuada mattis.
-      Curabitur neque enim, dignissim eget dapibus a, cursus id ex. Nunc eu
-      laoreet magna, non sodales ex.
-
-
-      Etiam eu sem lorem. In ac porta purus, in sagittis dui. Sed pretium, felis
-      in bibendum suscipit, ante ligula commodo nisl, non posuere nulla ipsum
-      nec libero. Phasellus porta volutpat tortor, at bibendum. Laudantium,
-      totam rem aperiam.
-
-
-      Curabitur quis efficitur mi, sit amet consectetur ipsum.
-    title: 7hu7yhy?
+  - content: "\rDegenerative joint disease is one of the biggest causes of poor performance and a decreased competitive lifespan in the horse. This is true for all types of equine athletes, from racehorses through to dressage and show horses. Both young and old horses can be affected by degenerative joint disease resulting in a loss of athletic ability and possible early retirement.\r\n\nJoint disease/ osteoarthritis is characterized by inflammation within a joint that sparks an inflammatory cascade resulting in the production of a large amount of inflammatory enzymes. Often the process of joint disease is characterized by an inflammation of the synovium (lining of the joint capsule) followed by the progressive destruction of articular cartilage. The development of joint disease can often progress un-noticed because the onset of lameness can be insidious. Often, it is not until an obvious lameness develops that the presence of degenerative joint disease is noticed.\r\n\nThe degree of the lameness when it is first reported can vary from mild to severe. The grading scale we use to quantify lameness runs from as scale of 0 to 10 with zero being a sound horse and 10 being a horse non-weight bearing on the limb in question."
+    title: IRAP (Interleukin-1 receptor antagonist protein)
 section2:
   title: Our Medical Cases
 gallery:
