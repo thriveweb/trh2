@@ -14,6 +14,11 @@ aboutSection1:
     the forefront of equine diagnostics. We provide medicine and surgery
     services, enabling us to provide the most up to date and appropriate care
     for both our patients and their owners.
+
+
+    Our experienced vets are committed exclusively to treating equines of all
+    shapes and sizes and are contactable directly to discuss ongoing cases or to
+    simply ask for advice.
   title: About Us
 aboutSection2:
   icon1Image: /images/uploads/about-icon-1.svg
