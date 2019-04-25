@@ -43,7 +43,7 @@ section3:
       hoverIcon: /images/uploads/icon-5-hover.svg
       link: /examinations
       name: Pre-Purchase Examinations
-  title: Our Servicess
+  title: Our Services
 section4:
   subtitle: >-
     We are a mobile diagnostics servicing from Mudgeeraba to Beaudesert on a
