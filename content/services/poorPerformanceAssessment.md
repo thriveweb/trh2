@@ -35,19 +35,11 @@ accordion:
       preparing your horse for its gastroscopy appointment.
     title: 'Gastroscopy '
   - content: >-
-      Intro to service pellentesque porta nibh vestibulum malesuada mattis.
-      Curabitur neque enim, dignissim eget dapibus a, cursus id ex. Nunc eu
-      laoreet magna, non sodales ex.
-
-
-      Etiam eu sem lorem. In ac porta purus, in sagittis dui. Sed pretium, felis
-      in bibendum suscipit, ante ligula commodo nisl, non posuere nulla ipsum
-      nec libero. Phasellus porta volutpat tortor, at bibendum. Laudantium,
-      totam rem aperiam.
-
-
-      Curabitur quis efficitur mi, sit amet consectetur ipsum.
-    title: 7hu7yhy?
+      We have a portable ECG (electrocardiography) machine for detecting heart
+      abnormalities which can be used in conjunction with ultrasound to assess
+      the condition of your horse's heart. This can be used for part of a poor
+      performance work up or pre-purchase examination.
+    title: ECG
 section2:
   title: Our Medical Cases
 gallery:
