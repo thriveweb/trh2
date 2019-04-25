@@ -5,18 +5,10 @@ title: Routine Surgery
 serviceIntro:
   icon: /images/uploads/service-icon-5.svg
   subtitle: >-
-    Intro to service pellentesque porta nibh vestibulum malesuada mattis.
-    Curabitur neque enim, dignissim eget dapibus a, cursus id ex. Nunc eu
-    laoreet magna, non sodales ex.
-
-
-    Etiam eu sem lorem. In ac porta purus, in sagittis dui. Sed pretium, felis
-    in bibendum suscipit, ante ligula commodo nisl, non posuere nulla ipsum nec
-    libero. Phasellus porta volutpat tortor, at bibendum. Laudantium, totam rem
-    aperiam.
-
-
-    Curabitur quis efficitur mi, sit amet consectetur ipsum.
+    TRH Equine Veterinary Services can perform routine surgery in the field or
+    stable. We perform a range of soft tissue, orthopaedic and dental surgical
+    procedures under local or IV anaesthetic. Including wound repairs,
+    castrations, skin graphs over extensive wounds, etc.
   title: Routine Surgery
 accordion: []
 section2:
