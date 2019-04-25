@@ -1,7 +1,7 @@
 ---
 template: SingleService
 slug: Osteoarthritis treatment
-title: Treatment
+title: Osteoarthritis Treatment
 serviceIntro:
   icon: /images/uploads/service-icon-2.svg
   subtitle: "Osteoarthritis, commonly shortened to just arthritis, is a condition common to all species, including humans and horses. ‘Osteo-’ refers to bone, ‘arthro-’ refers to joints and ‘-itis’ means inflammation. Therefore, the term osteoarthritis means inflammation of bone and joints, which is exactly what the disease is. It is also known as degenerative joint disease, or DJD for short.\r\r\n\nOsteoarthritis is a very complex disease that affects a large proportion of the horse population. Young horses can be affected as well as older horses. A history of low-grade lameness, which the horse warms out of with exercise and is worse on cold mornings, is strongly suggestive of arthritis. A lameness examination, including nerve and joint blocks, followed by radiographs, confirms the diagnosis. Based upon the severity of the clinical signs, the severity of the changes on x-rays, and the use of the horse, the most appropriate treatment regime can be developed. Treatment will not reverse the changes present, but is aimed at reducing the rate of progression of the disease, rendering the joint pain-free, and prolonging the athletic career of the horse. The response to treatment can be a very individual horse-thing, so it can take some time to find what treatments and management work best for each individual horse. Arthritis can be a career-ending problem, but it is not often that a horse has to be euthanized for arthritis, they can usually be kept comfortable enough to live out their days in a paddock."
