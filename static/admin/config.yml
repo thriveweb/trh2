@@ -4,204 +4,244 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: 'static/images/uploads' # Media files will be stored in the repo under static/images/uploads
+public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "pages"
-    label: "Page"
+  - name: 'pages'
+    label: 'Page'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: true
     files:
-      - file: "content/pages/contact.md"
-        label: "Contact Page"
-        name: "contact-page"
+      - file: 'content/pages/contact.md'
+        label: 'Contact Page'
+        name: 'contact-page'
         fields:
-          - {label: Template, name: template, widget: hidden, default: ContactPage}
-          - {label: Slug, name: slug, widget: hidden, default: 'contact'}
-          - {label: Title, name: title, widget: string}
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ContactPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'contact' }
+          - { label: Title, name: title, widget: string }
 
           - label: Header
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - {label: Hero Image, name: heroImage, widget: image}
-              - {label: Title, name: title, widget: string}
+              - { label: Hero Image, name: heroImage, widget: image }
+              - { label: Title, name: title, widget: string }
 
           - label: Contact Section 1
             name: contactSection1
-            widget: "object"
+            widget: 'object'
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
-              - {label: Phone, name: phone, widget: string}
-              - {label: Email, name: email, widget: string}
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - { label: Phone, name: phone, widget: string }
+              - { label: Email, name: email, widget: string }
           - label: Contact Section 2
             name: contactSection2
-            widget: "object"
+            widget: 'object'
             fields:
-              - {label: Address, name: address, widget: string}
-              - {label: Opening Hours, name: openingHours, widget: markdown}
-              - {label: Phone, name: phone, widget: string}
-              - {label: Parking Info, name: parkingInfo, widget: string}
+              - { label: Address, name: address, widget: string }
+              - { label: Opening Hours, name: openingHours, widget: markdown }
+              - { label: Phone, name: phone, widget: string }
+              - { label: Parking Info, name: parkingInfo, widget: string }
 
-      - file: "content/pages/blog.md"
-        label: "Blog Page"
-        name: "blog-page"
+      - file: 'content/pages/blog.md'
+        label: 'Blog Page'
+        name: 'blog-page'
         fields:
-          - {label: Template, name: template, widget: hidden, default: BlogIndex}
-          - {label: Slug, name: slug, widget: hidden, default: 'blog'}
-          - {label: Title, name: title, widget: string}
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: BlogIndex,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'blog' }
+          - { label: Title, name: title, widget: string }
 
-      - file: "content/pages/about.md"
-        label: "About Page"
-        name: "about-page"
+      - file: 'content/pages/about.md'
+        label: 'About Page'
+        name: 'about-page'
         fields:
-          - {label: Template, name: template, widget: hidden, default: AboutPage}
-          - {label: Slug, name: slug, widget: hidden, default: 'about'}
-          - {label: Title, name: title, widget: string}
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: AboutPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'about' }
+          - { label: Title, name: title, widget: string }
 
           - label: Header
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - {label: Hero Image, name: heroImage, widget: image}
-              - {label: Title, name: title, widget: string}
+              - { label: Hero Image, name: heroImage, widget: image }
+              - { label: Title, name: title, widget: string }
 
           - label: About Section 1
             name: aboutSection1
-            widget: "object"
+            widget: 'object'
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Content, name: content, widget: markdown}
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: markdown }
 
           - label: About Section 2
             name: aboutSection2
-            widget: "object"
+            widget: 'object'
             fields:
-              - {label: Icon Image 1, name: icon1Image, widget: image}
-              - {label: Icon 1 Title, name: icon1Title, widget: string}
-              - {label: Icon 1 Subtitle, name: icon1Subtitle, widget: string}
-              - {label: Icon Image 2, name: icon2Image, widget: image}
-              - {label: Icon 2 Title, name: icon2Title, widget: string}
-              - {label: Icon 2 Subtitle, name: icon2Subtitle, widget: string}
-              - {label: Icon Image 3, name: icon3Image, widget: image}
-              - {label: Icon 3 Title, name: icon3Title, widget: string}
-              - {label: Icon 3 Subtitle, name: icon3Subtitle, widget: string}
+              - { label: Icon Image 1, name: icon1Image, widget: image }
+              - { label: Icon 1 Title, name: icon1Title, widget: string }
+              - { label: Icon 1 Subtitle, name: icon1Subtitle, widget: string }
+              - { label: Icon Image 2, name: icon2Image, widget: image }
+              - { label: Icon 2 Title, name: icon2Title, widget: string }
+              - { label: Icon 2 Subtitle, name: icon2Subtitle, widget: string }
+              - { label: Icon Image 3, name: icon3Image, widget: image }
+              - { label: Icon 3 Title, name: icon3Title, widget: string }
+              - { label: Icon 3 Subtitle, name: icon3Subtitle, widget: string }
 
           - label: About Section 3
             name: aboutSection3
-            widget: "object"
+            widget: 'object'
             fields:
-              - {label: Background Image, name: backgroundImage, widget: image}
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
-              - {label: Vet 1 Image, name: vetImage1, widget: image}
-              - {label: Vet 1 Name, name: vetName1, widget: string}
-              - {label: Vet 1 Information, name: vetDescription1, widget: markdown}
-              - {label: Vet 2 Image, name: vetImage2, widget: image}
-              - {label: Vet 2 Name, name: vetName2, widget: string}
-              - {label: Vet 2 Information, name: vetDescription2, widget: markdown}
-              - {label: Vet 3 Image, name: vetImage3, widget: image}
-              - {label: Vet 3 Information, name: vetDescription3, widget: markdown}
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: image,
+                }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - { label: Vet 1 Image, name: vetImage1, widget: image }
+              - { label: Vet 1 Name, name: vetName1, widget: string }
+              - {
+                  label: Vet 1 Information,
+                  name: vetDescription1,
+                  widget: markdown,
+                }
+              - { label: Vet 2 Image, name: vetImage2, widget: image }
+              - { label: Vet 2 Name, name: vetName2, widget: string }
+              - {
+                  label: Vet 2 Information,
+                  name: vetDescription2,
+                  widget: markdown,
+                }
+              - { label: Vet 3 Image, name: vetImage3, widget: image }
+              - {
+                  label: Vet 3 Information,
+                  name: vetDescription3,
+                  widget: markdown,
+                  default: '',
+                }
 
           - label: About Section 4
             name: aboutSection4
-            widget: "object"
+            widget: 'object'
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
               - label: Single Service
                 name: singleService
                 widget: list
                 fields:
-                  - {label: Name, name: name, widget: string}
-                  - {label: Default Icon, name: defaultIcon, widget: image}
-                  - {label: Hover Icon, name: hoverIcon, widget: image}
-                  - {label: Link, name: link, widget: string}
+                  - { label: Name, name: name, widget: string }
+                  - { label: Default Icon, name: defaultIcon, widget: image }
+                  - { label: Hover Icon, name: hoverIcon, widget: image }
+                  - { label: Link, name: link, widget: string }
 
           - label: Gallery
             name: gallery
             widget: list
             fields:
-              - {label: Image, name: image, widget: image}
-              - {label: Title, name: title, widget: string}
-              - {label: Content, name: content, widget: string}
+              - { label: Image, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: string }
 
-
-      - file: "content/pages/home.md"
-        label: "Home Page"
-        name: "home-page"
+      - file: 'content/pages/home.md'
+        label: 'Home Page'
+        name: 'home-page'
         fields:
-          - {label: Template, name: template, widget: hidden, default: HomePage}
-          - {label: Slug, name: slug, widget: hidden, default: ''}
-          - {label: Title, name: title, widget: string}
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: HomePage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
 
           - label: Section 1
             name: section1
             widget: object
             fields:
-              - {label: Hero Image, name: heroImage, widget: image}
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
+              - { label: Hero Image, name: heroImage, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
 
           - label: Section 2
             name: section2
             widget: object
             fields:
-              - {label: Content, name: content, widget: string}
+              - { label: Content, name: content, widget: string }
 
           - label: Section 3
             name: section3
             widget: object
             fields:
-              - {label: Background Image, name: backgroundImage, widget: image}
-              - {label: Title, name: title, widget: string}
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: image,
+                }
+              - { label: Title, name: title, widget: string }
               - label: Single Service
                 name: singleService
                 widget: list
                 fields:
-                  - {label: Name, name: name, widget: string}
-                  - {label: Default Icon, name: defaultIcon, widget: image}
-                  - {label: Hover Icon, name: hoverIcon, widget: image}
-                  - {label: Link, name: link, widget: string}
+                  - { label: Name, name: name, widget: string }
+                  - { label: Default Icon, name: defaultIcon, widget: image }
+                  - { label: Hover Icon, name: hoverIcon, widget: image }
+                  - { label: Link, name: link, widget: string }
 
           - label: Section 4
             name: section4
             widget: object
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
 
           - label: Section 5
             name: section5
             widget: object
             fields:
-              - {label: Background Image, name: backgroundImage, widget: image}
-              - {label: Title, name: title, widget: string}
-              - {label: Content, name: content, widget: markdown}
-              - {label: Quote, name: quote, widget: string}
+              - {
+                  label: Background Image,
+                  name: backgroundImage,
+                  widget: image,
+                }
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: markdown }
+              - { label: Quote, name: quote, widget: string }
 
           - label: Section 6
             name: section6
             widget: object
             fields:
-              - {label: Title, name: title, widget: string}
+              - { label: Title, name: title, widget: string }
 
           - label: Gallery
             name: gallery
             widget: list
             fields:
-              - {label: Before Image, name: imageBefore, widget: image}
-              - {label: After Image, name: imageAfter, widget: image}
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
-              - {label: Link to Case, name: link, widget: string}
-
-
-
-
+              - { label: Before Image, name: imageBefore, widget: image }
+              - { label: After Image, name: imageAfter, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - { label: Link to Case, name: link, widget: string }
 
   - name: services
     label: Service Single Page
@@ -210,138 +250,170 @@ collections: # A list of collections the CMS should be able to edit
     folder: content/services
     create: true # Allow users to create new documents in this collection
     fields:
-      - {label: Template, name: template, widget: hidden, default: SingleService}
-      - {label: Slug, name: slug, widget: string}
-      - {label: Title, name: title, widget: string}
+      - {
+          label: Template,
+          name: template,
+          widget: hidden,
+          default: SingleService,
+        }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Title, name: title, widget: string }
 
       - label: Service Intro
         name: serviceIntro
-        widget: "object"
+        widget: 'object'
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Icon, name: icon, widget: image}
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: markdown }
+          - { label: Icon, name: icon, widget: image }
 
       - label: Accordion
         name: accordion
         widget: list
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: content, widget: markdown}
+          - { label: Title, name: title, widget: string }
+          - { label: Content, name: content, widget: markdown }
 
       - label: Section 2
         name: section2
         widget: object
         fields:
-          - {label: Title, name: title, widget: string}
+          - { label: Title, name: title, widget: string }
 
       - label: Gallery
         name: gallery
         widget: list
         fields:
-          - {label: Before Image, name: imageBefore, widget: image}
-          - {label: After Image, name: imageAfter, widget: image}
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Link to Case, name: link, widget: string}
-
+          - { label: Before Image, name: imageBefore, widget: image }
+          - { label: After Image, name: imageAfter, widget: image }
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Link to Case, name: link, widget: string }
 
   - name: posts
     label: Post
     editor:
       preview: true
     folder: content/posts
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: Template, name: template, widget: hidden, default: SinglePost}
-      - {label: Title, name: title, widget: string}
+      - { label: Template, name: template, widget: hidden, default: SinglePost }
+      - { label: Title, name: title, widget: string }
       - label: 'Status'
         name: 'status'
         widget: 'select'
-        options: ["Published", "Featured", "Draft"]
+        options: ['Published', 'Featured', 'Draft']
         default: 'Published'
-      - {label: Date / Order, name: date, widget: date}
-      - {label: Featured Image, name: featuredImage, widget: image, required: false}
-      - {label: Excerpt, name: excerpt, widget: text}
-      - {label: Content, name: body, widget: markdown}
-      - label: "Categories"
-        name: "categories"
-        widget: "list"
+      - { label: Date / Order, name: date, widget: date }
+      - {
+          label: Featured Image,
+          name: featuredImage,
+          widget: image,
+          required: false,
+        }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Content, name: body, widget: markdown }
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'list'
         required: false
         fields:
-          - label: "Category"
-            name: "category"
-            widget: "relation"
-            collection: "postCategories"
-            searchFields: ["title"]
-            valueField: "title"
+          - label: 'Category'
+            name: 'category'
+            widget: 'relation'
+            collection: 'postCategories'
+            searchFields: ['title']
+            valueField: 'title'
 
       - label: Accordion
         name: accordion
         widget: list
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: content, widget: markdown}
-          - {label: Link, name: link, widget: file}
+          - { label: Title, name: title, widget: string }
+          - { label: Content, name: content, widget: markdown }
+          - { label: Link, name: link, widget: file }
 
       - label: Gallery
         name: gallery
         widget: list
         fields:
-          - {label: Image, name: image, widget: image}
+          - { label: Image, name: image, widget: image }
 
-
-      - label: "Meta"
+      - label: 'Meta'
         required: false
-        name: "meta"
-        widget: "object"
+        name: 'meta'
+        widget: 'object'
         fields:
-          - {label: Title, name: title, widget: string, required: false}
-          - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
-          - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
-          - {label: Noindex, name: noindex, widget: boolean, required: false}
-
+          - { label: Title, name: title, widget: string, required: false }
+          - {
+              label: Description,
+              name: description,
+              widget: text,
+              required: false,
+              pattern: ['.{,300}', 'Must not exceed 300 characters'],
+            }
+          - {
+              label: Canonical Link,
+              name: canonicalLink,
+              widget: string,
+              required: false,
+            }
+          - { label: Noindex, name: noindex, widget: boolean, required: false }
 
   - name: postCategories
     label: Post Category
     editor:
       preview: false
     folder: content/postCategories
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: Template, name: template, widget: hidden, default: BlogIndex}
-      - {label: Title, name: title, widget: string}
-      - {label: Subtitle, name: subtitle, widget: string, required: false}
-      - {label: Featured Image, name: featuredImage, widget: image, required: false}
-      # - label: "Meta"
-      #   required: false
-      #   name: "meta"
-      #   widget: "object"
-      #   fields:
-      #     - {label: Title, name: title, widget: string, required: false}
-      #     - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
-      #     - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
-      #     - {label: Noindex, name: noindex, widget: boolean, required: false}
+      - { label: Template, name: template, widget: hidden, default: BlogIndex }
+      - { label: Title, name: title, widget: string }
+      - { label: Subtitle, name: subtitle, widget: string, required: false }
+      - {
+          label: Featured Image,
+          name: featuredImage,
+          widget: image,
+          required: false,
+        }
+  # - label: "Meta"
+  #   required: false
+  #   name: "meta"
+  #   widget: "object"
+  #   fields:
+  #     - {label: Title, name: title, widget: string, required: false}
+  #     - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
+  #     - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
+  #     - {label: Noindex, name: noindex, widget: boolean, required: false}
 
-
-  - name: "settings"
-    label: "Settings"
+  - name: 'settings'
+    label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
     files:
-      - file: "content/settings/global.yml"
-        label: "Global Settings"
-        name: "global-settings"
+      - file: 'content/settings/global.yml'
+        label: 'Global Settings'
+        name: 'global-settings'
         fields:
-          - {label: Site Title, name: siteTitle, widget: string}
-          - {label: Site Url, name: siteUrl, widget: string, required: false}
-          - {label: Site Description, name: siteDescription, widget: text, required: false}
+          - { label: Site Title, name: siteTitle, widget: string }
+          - { label: Site Url, name: siteUrl, widget: string, required: false }
+          - {
+              label: Site Description,
+              name: siteDescription,
+              widget: text,
+              required: false,
+            }
           - label: Social Media Card
             name: socialMediaCard
             widget: object
             fields:
-              - {label: Image, name: image, widget: image, required: false}
-          - {label: Header Meta / Scripts, name: headerScripts, widget: text, required: false}
+              - { label: Image, name: image, widget: image, required: false }
+          - {
+              label: Header Meta / Scripts,
+              name: headerScripts,
+              widget: text,
+              required: false,
+            }
