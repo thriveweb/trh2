@@ -15,9 +15,9 @@ import './SingleService.scss'
 export const SingleServiceTemplate = ({
   title,
   serviceIntro,
-  accordion,
-  section2,
-  gallery = []
+  accordion
+  // section2,
+  // gallery = []
 }) => (
   <Fragment>
     <main className="ServicesPage">
@@ -46,7 +46,7 @@ export const SingleServiceTemplate = ({
         subtitle="We are a mobile diagnostics servicing from Mudgeeraba to Beaudesert on a basic call out fee."
       />
 
-      <section className="service-section--2 section">
+      {/* <section className="service-section--2 section">
         <h2>{section2.title}</h2>
 
         {gallery.length && (
@@ -56,7 +56,7 @@ export const SingleServiceTemplate = ({
             </div>
           </section>
         )}
-      </section>
+      </section> */}
     </main>
   </Fragment>
 )
@@ -87,20 +87,20 @@ export const pageQuery = graphql`
             publicURL
           }
         }
-        section2 {
-          title
-        }
-        gallery {
-          imageBefore {
-            ...FluidImage
-          }
-          imageAfter {
-            ...FluidImage
-          }
-          title
-          subtitle
-          link
-        }
+        # section2 {
+        #   title
+        # }
+        # gallery {
+        #   imageBefore {
+        #     ...FluidImage
+        #   }
+        #   imageAfter {
+        #     ...FluidImage
+        #   }
+        #   title
+        #   subtitle
+        #   link
+        # }
       }
     }
   }
