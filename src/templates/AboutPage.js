@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Link from 'gatsby-link'
 
 import PageHeader from '../components/PageHeader'
+import Content from '../components/Content'
 import Image from '../components/Image'
 import BackgroundImage from '../components/BackgroundImage'
 import Services from '../components/Services'
@@ -16,8 +17,8 @@ export const AboutPageTemplate = ({
   aboutSection1,
   aboutSection2,
   aboutSection3,
-  aboutSection4,
-  gallery = []
+  aboutSection4
+  // gallery = []
 }) => (
   <Fragment>
     <main className="AboutPage">
@@ -97,7 +98,11 @@ export const AboutPageTemplate = ({
                   alt="vet staff"
                 />
                 <p className="service-title">{aboutSection3.vetName2}</p>
-                <p className="subtitle">{aboutSection3.vetDescription2}</p>
+                <Content
+                  className="subtitle"
+                  source={aboutSection3.vetDescription2}
+                />
+                {/* <p className="subtitle">{aboutSection3.vetDescription2}</p> */}
               </li>
 
               {!!aboutSection3.vetName3 && (
@@ -108,7 +113,11 @@ export const AboutPageTemplate = ({
                     alt="vet staff"
                   />
                   <p className="service-title">{aboutSection3.vetName3}</p>
-                  <p className="subtitle">{aboutSection3.vetDescription3}</p>
+                  <Content
+                    className="subtitle"
+                    source={aboutSection3.vetDescription3}
+                  />
+                  {/* <p className="subtitle">{aboutSection3.vetDescription3}</p> */}
                 </li>
               )}
             </ul>
@@ -122,17 +131,15 @@ export const AboutPageTemplate = ({
           <div className="flex">
             <Services singleService={aboutSection4.singleService} />
           </div>
-
-          <p className="big-body">{aboutSection4.subtitle}</p>
         </div>
 
-        {gallery.length && (
+        {/* {gallery.length && (
           <section className="Centre--Gallery">
             <div className="container taCenter">
               <Gallery gallery={gallery} />
             </div>
           </section>
-        )}
+        )} */}
       </section>
     </main>
   </Fragment>
@@ -200,7 +207,6 @@ export const pageQuery = graphql`
         }
         aboutSection4 {
           title
-          subtitle
           singleService {
             name
             defaultIcon {
@@ -212,13 +218,13 @@ export const pageQuery = graphql`
             link
           }
         }
-        gallery {
-          image {
-            ...FluidImage
-          }
-          title
-          content
-        }
+        # gallery {
+        #   image {
+        #     ...FluidImage
+        #   }
+        #   title
+        #   content
+        # }
       }
     }
   }

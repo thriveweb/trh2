@@ -82,9 +82,6 @@ aboutSection4:
       hoverIcon: /images/uploads/icon-5-hover.svg
       link: /examinations
       name: Pre-Purchase Examinations
-  subtitle: >-
-    Introduce affiliate providers tristique senectus et netus et malesuada fames
-    ac turpis egestas. Nunc fermentum dignissim enim.
   title: Our Services
 gallery:
   - content: >-

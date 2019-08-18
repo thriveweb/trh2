@@ -62,7 +62,7 @@ export const HomePageTemplate = ({
 
       <Cta title={section4.title} subtitle={section4.subtitle} />
 
-      <section className="section--5 section thick relative">
+      <section className="section--5 section relative">
         <Image
           background
           src={section5.backgroundImage}
@@ -80,7 +80,7 @@ export const HomePageTemplate = ({
               </Link>
             </div>
 
-            <div className="right">
+            {/* <div className="right">
               <Image
                 className="quote-mark"
                 src="/images/uploads/quote-mark.svg"
@@ -88,12 +88,12 @@ export const HomePageTemplate = ({
               />
 
               <h3>{section5.quote}</h3>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
-      <section className="section--6 section relative">
+      {/* <section className="section--6 section relative">
         <div className="container">
           <h2>{section6.title}</h2>
 
@@ -105,7 +105,7 @@ export const HomePageTemplate = ({
             </section>
           )}
         </div>
-      </section>
+      </section> */}
     </main>
   </Fragment>
 )
@@ -166,21 +166,6 @@ export const pageQuery = graphql`
           }
           title
           content
-          quote
-        }
-        section6 {
-          title
-        }
-        gallery {
-          imageBefore {
-            ...FluidImage
-          }
-          title
-          imageAfter {
-            ...FluidImage
-          }
-          subtitle
-          link
         }
       }
     }

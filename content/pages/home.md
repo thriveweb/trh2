@@ -4,7 +4,8 @@ slug: ''
 title: TRH Equine Vets
 section1:
   heroImage: /images/uploads/img_7373.jpg
-  subtitle: Dedicated to providing the best quality of care to you and your equine
+  subtitle:
+    Dedicated to providing the best quality of care to you and your equine
   title: Mobile Horse Diagnosticss
 section2:
   content: >-
@@ -55,23 +56,11 @@ section5:
     Is to provide and promote the highest quality of veterinary care to our
     patients through excellence in veterinary medicine and unprecedented medical
     standards, while providing our clients with the education and assistance in
-    all aspects of equine care. 
+    all aspects of equine care.
 
 
     We pride ourselves in the knowledge that treating owners and their horses,
     with the upmost respect, honesty and compassion as if they were our own
     family.
-  quote: ''
   title: Our Vision
-section6:
-  title: Our Medical Cases
-gallery:
-  - imageAfter: /images/uploads/imageafter.jpg
-    imageBefore: /images/uploads/beforephoto.jpg
-    link: /posts/case-1/
-    subtitle: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam, eaqueipsa
-    title: Float Injury
 ---
-
