@@ -1,6 +1,6 @@
 ---
 template: SingleService
-slug: Pre purchase Examination
+slug: examinations
 title: Pre Purchase Examinations
 serviceIntro:
   icon: /images/uploads/service-icon-7.svg
