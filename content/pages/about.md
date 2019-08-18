@@ -17,8 +17,7 @@ aboutSection1:
   title: About Us
 aboutSection2:
   icon1Image: /images/uploads/about-icon-1.svg
-  icon1Subtitle:
-    'Lameness assessment, diagnostic imaging, blood tests, clinical exams. '
+  icon1Subtitle: 'Lameness assessment, diagnostic imaging, blood tests, clinical exams. '
   icon1Title: Mobile Diagnostics
   icon2Image: /images/uploads/about-icon-2.svg
   icon2Subtitle: Discuss charges
@@ -35,10 +34,54 @@ aboutSection3:
     shapes and sizes and are contactable directly to discuss ongoing cases or to
     simply ask for advice.
   title: Our Staff
-  vetDescription1:
-    "Dr Timothy Hawthorne\r\n\nBVSc (Hons) BSc (Hons) CertAVP MRCVS\r\n\nDr. Timothy Hawthorne grew up around racing and equestrian sport from a young age. Raised on a Thoroughbred stud on the Darling Downs, Queensland, he developed a passion for racing, frequently attending the races to watch his parent’s horses.\r\n\nAt 19, Dr. Hawthorne, completed a Bachelor of Science majoring in Molecular Biology, then took a year out from academic studies to pursue his love for diving and the ocean. He was employed as a commercial scuba diver, exploring uncharted reefs off the Queensland coast!!\r\n\nThe lure of a career in veterinary science drew him back to dry land; he wrote and published a thesis on Veterinary Parasitology the following year. From there, he graduated from the University of Queensland with a BVSc (first class honours).\r\n\nDr. Hawthorne, worked for a mixed practice in Toowoomba, QLD before heading to England to pursue a career as an equine vet. He worked in Leicestershire for a year, before taking up a post at the world-renowned veterinary practice, Rossdales, based in the birthplace of thoroughbred racing, Newmarket. During his 5 years there he worked in many high profile racing stables, developing a scientific approach to managing racehorse lameness and wellbeing. He also worked with high profile performance horses including: grand prix dressage, showjumpers, eventers and endurance horses.\r\n\nIn 2012, he was awarded the RCVS Certificate of Advanced Veterinary Practice(CertAVP), which he completed though the University of Liverpool, England. On return to Australia he worked in Melbourne and on the Gold Coast. \r\n\nHe has now set up TRH Equine Veterinary Services Pty Ltd, based in Guanaba (Gold Coast Hinterland). \r\n\nDr. Hawthorne’s particular areas of interest include lameness assessment, radiography, ultrasonography and equine dentistry."
-  vetDescription2:
-    "Originally from Lancashire in the UK, Naomi grew up with horses and this is where her interest in veterinary medicine began. \r\n\nThroughout her clinical studies at the University of Edinburgh, graduating in July 2015, there was a focus on all things equine including time at an equine hospital in Newmarket; the home of British horse racing. \r\n\nShe started her career at a busy mixed practice and although she saw a varied caseload, she wanted to pursue her interests in the equine field. \r\n\n6 months later, Naomi joined an equine only practice and over a 3 year period, she developed many of her skills in lameness investigation, radiography, equine medicine and reproduction.\r\n\nHaving just completed the Southern Hemisphere stud season in QLD, Naomi has fallen in love with the Australian way of life and brings the next chapter of her professional journey to TRH Equine Vets.\r\n\n\r\n\nNot one to rest on her laurels, Naomi will soon commence her studies for her certificate in equine advanced veterinary practice. In her Spare time, Naomi enjoys horse riding (of course!), heading to the beach and making the most of what Queensland has to offer.\r\n\nTo make an appointment please call ‭\r\n\n0400841186"
+  vetDescription1: >-
+    Dr Timothy Hawthorne
+
+
+    BVSc (Hons) BSc (Hons) CertAVP MRCVS
+
+
+    Dr. Timothy Hawthorne grew up around racing and equestrian sport from a
+    young age. Raised on a Thoroughbred stud on the Darling Downs, Queensland,
+    he developed a passion for racing, frequently attending the races to watch
+    his parent’s horses.
+
+
+    At 19, Dr. Hawthorne, completed a Bachelor of Science majoring in Molecular
+    Biology, then took a year out from academic studies to pursue his love for
+    diving and the ocean. He was employed as a commercial scuba diver, exploring
+    uncharted reefs off the Queensland coast!!
+
+
+    The lure of a career in veterinary science drew him back to dry land; he
+    wrote and published a thesis on Veterinary Parasitology the following year.
+    From there, he graduated from the University of Queensland with a BVSc
+    (first class honours).
+
+
+    Dr. Hawthorne, worked for a mixed practice in Toowoomba, QLD before heading
+    to England to pursue a career as an equine vet. He worked in Leicestershire
+    for a year, before taking up a post at the world-renowned veterinary
+    practice, Rossdales, based in the birthplace of thoroughbred racing,
+    Newmarket. During his 5 years there he worked in many high profile racing
+    stables, developing a scientific approach to managing racehorse lameness and
+    wellbeing. He also worked with high profile performance horses including:
+    grand prix dressage, showjumpers, eventers and endurance horses.
+
+
+    In 2012, he was awarded the RCVS Certificate of Advanced Veterinary
+    Practice(CertAVP), which he completed though the University of Liverpool,
+    England. On return to Australia he worked in Melbourne and on the Gold
+    Coast. 
+
+
+    He has now set up TRH Equine Veterinary Services Pty Ltd, based in Guanaba
+    (Gold Coast Hinterland). 
+
+
+    Dr. Hawthorne’s particular areas of interest include lameness assessment,
+    radiography, ultrasonography and equine dentistry.
+  vetDescription2: "Originally from Lancashire in the UK, Naomi grew up with horses and this is where her interest in veterinary medicine began. \r\n\nThroughout her clinical studies at the University of Edinburgh, graduating in July 2015, there was a focus on all things equine including time at an equine hospital in Newmarket; the home of British horse racing. \r\n\nShe started her career at a busy mixed practice and although she saw a varied caseload, she wanted to pursue her interests in the equine field. \r\n\n6 months later, Naomi joined an equine only practice and over a 3 year period, she developed many of her skills in lameness investigation, radiography, equine medicine and reproduction.\r\n\nHaving just completed the Southern Hemisphere stud season in QLD, Naomi has fallen in love with the Australian way of life and brings the next chapter of her professional journey to TRH Equine Vets.\r\n\n\r\n\nNot one to rest on her laurels, Naomi will soon commence her studies for her certificate in equine advanced veterinary practice. In her Spare time, Naomi enjoys horse riding (of course!), heading to the beach and making the most of what Queensland has to offer.\r\n\nTo make an appointment please call ‭\r\n\n0400841186"
   vetDescription3: >-
     Brief bio here rem aperiam, eaque ipsa quae ab illo inventore veritatis et
     quasi architecto beatae vitae dicta sunt.
@@ -51,7 +94,6 @@ aboutSection3:
   vetImage3: /images/uploads/vet-3.png
   vetName1: 'Tim Hawthorne '
   vetName2: Naomi Gaskell
-  vetName3: ''
 aboutSection4:
   singleService:
     - defaultIcon: /images/uploads/icon-1.svg
@@ -108,3 +150,4 @@ gallery:
     image: /images/uploads/partnerlogo-4.png
     title: Owen Valley Equine Vets
 ---
+
