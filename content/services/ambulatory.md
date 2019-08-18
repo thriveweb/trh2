@@ -17,6 +17,17 @@ accordion:
     title: 'Hendra Virus Vaccination '
   - content: "Equine herpesvirus (EHV) is both clinically and economically important worldwide. Currently there are nine different herpesviruses that are recognised (EHV-1 to EHV-9). However, the most significant types are EHV-1 and EHV-4.\r\n\n \r\n\nThe virus is endemic within the horse population in most countries throughout the world. EHV-1 is the most significant of the equine herpesviruses, as it is responsible for causing respiratory disease, abortion (including outbreaks), early neonatal death of foals and neurologic disease. However, EHV-4 is also associated with respiratory disease and, less commonly, abortion. In any given outbreak of EHV, clinical signs are usually limited to one manifestation of the disease."
     title: 'Herpes Virus '
+  - content: >-
+      A regular program of dentistry is essential for all ages of horse. Regular
+      oral examination and dentistry will allow the detection and removal of
+      sharp enamel points that develop due to continued eruption of equine
+      teeth.\r\n\nRegular examination will enable us to detect the early signs
+      of abnormalities in the wear of cheek teeth, irregularities in eruption,
+      decay and periodontal disease. We can also detect and correct problems
+      with bitting, head carriage, performance and eating disorders. We use a
+      modern, motorised ‘Powerfloat’ at the clinic to allow rapid and thorough
+      completion of dentistry services.
+    title: 'Dentistry '
 section2:
   title: Our Medical Cases
 gallery:
