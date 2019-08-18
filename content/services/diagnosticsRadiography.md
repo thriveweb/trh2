@@ -16,33 +16,16 @@ serviceIntro:
   title: Diagnostics - Radiography
 accordion:
   - content: >-
-      Intro to service pellentesque porta nibh vestibulum malesuada mattis.
-      Curabitur neque enim, dignissim eget dapibus a, cursus id ex. Nunc eu
-      laoreet magna, non sodales ex.
-
-
-      Etiam eu sem lorem. In ac porta purus, in sagittis dui. Sed pretium, felis
-      in bibendum suscipit, ante ligula commodo nisl, non posuere nulla ipsum
-      nec libero. Phasellus porta volutpat tortor, at  bibendum. Laudantium,
-      totam rem aperiam.
-
-
-      Curabitur quis efficitur mi, sit amet consectetur ipsum.
-    title: 'Sed pretium, felis in bibendum suscipit, ante ligula commodo nisl?'
-  - content: >-
-      Intro to service pellentesque porta nibh vestibulum malesuada mattis.
-      Curabitur neque enim, dignissim eget dapibus a, cursus id ex. Nunc eu
-      laoreet magna, non sodales ex.
-
-
-      Etiam eu sem lorem. In ac porta purus, in sagittis dui. Sed pretium, felis
-      in bibendum suscipit, ante ligula commodo nisl, non posuere nulla ipsum
-      nec libero. Phasellus porta volutpat tortor, at bibendum.  Laudantium,
-      totam rem aperiam.
-
-
-      Curabitur quis efficitur mi, sit amet consectetur ipsum.
-    title: 7hu7yhy?
+      Ultrasonography is an imaging modality used to assess soft tissue
+      structures such as tendons, ligaments, internal organs, eyes and masses.
+      Damage to tendons and ligaments can be seen on ultrasound as changes to
+      the fibre pattern and cross sectional area of the structure. Ultrasound is
+      used rectally in mares to assess the uterus and ovaries as well as
+      checking for pregnancy during their breeding cycle. TRH Equine Veterinary
+      Services has a high quality soft tissue ultrasound as well reproduction
+      ultrasound for mobile use, allowing us to perform thorough ultrasound
+      exams in the stables and field.
+    title: 'Ultrasound '
 section2:
   title: Our Medical Cases
 gallery:
