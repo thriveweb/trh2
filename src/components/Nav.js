@@ -15,7 +15,7 @@ export default ({ handlePopupOpen }) => (
       </Link>
 
       <div className="right hamburger">
-        <Hamburger  />
+        <Hamburger />
       </div>
 
       <div className="flex menu">
@@ -54,9 +54,9 @@ export default ({ handlePopupOpen }) => (
           </ul>
         </NavLink>
 
-        <NavLink to="/case-studies/" exact>
+        {/* <NavLink to="/case-studies/" exact>
           Case Studies
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/contact/" exact>
           Contact
         </NavLink>

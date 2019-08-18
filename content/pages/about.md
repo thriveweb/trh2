@@ -17,7 +17,8 @@ aboutSection1:
   title: About Us
 aboutSection2:
   icon1Image: /images/uploads/about-icon-1.svg
-  icon1Subtitle: 'Lameness assessment, diagnostic imaging, blood tests, clinical exams. '
+  icon1Subtitle:
+    'Lameness assessment, diagnostic imaging, blood tests, clinical exams. '
   icon1Title: Mobile Diagnostics
   icon2Image: /images/uploads/about-icon-2.svg
   icon2Subtitle: Discuss charges
@@ -112,16 +113,8 @@ aboutSection3:
 
 
     To make an appointment please call ‭0400841186
-  vetDescription3: >-
-    Brief bio here rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-    quasi architecto beatae vitae dicta sunt.
-
-
-    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-    sed quia consequuntur magni.
   vetImage1: /images/uploads/img_7371.jpg
   vetImage2: /images/uploads/naomi.bmp
-  vetImage3: /images/uploads/vet-3.png
   vetName1: 'Tim Hawthorne '
   vetName2: Naomi Gaskell
 aboutSection4:
@@ -180,4 +173,3 @@ gallery:
     image: /images/uploads/partnerlogo-4.png
     title: Owen Valley Equine Vets
 ---
-

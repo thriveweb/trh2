@@ -199,11 +199,11 @@ export const pageQuery = graphql`
           }
           vetName2
           vetDescription2
-          vetImage3 {
-            ...FluidImage
-          }
-          vetName3
-          vetDescription3
+          # vetImage3 {
+          #   ...FluidImage
+          # }
+          # vetName3
+          # vetDescription3
         }
         aboutSection4 {
           title
