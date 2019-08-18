@@ -81,7 +81,37 @@ aboutSection3:
 
     Dr. Hawthorne’s particular areas of interest include lameness assessment,
     radiography, ultrasonography and equine dentistry.
-  vetDescription2: "Originally from Lancashire in the UK, Naomi grew up with horses and this is where her interest in veterinary medicine began. \r\n\nThroughout her clinical studies at the University of Edinburgh, graduating in July 2015, there was a focus on all things equine including time at an equine hospital in Newmarket; the home of British horse racing. \r\n\nShe started her career at a busy mixed practice and although she saw a varied caseload, she wanted to pursue her interests in the equine field. \r\n\n6 months later, Naomi joined an equine only practice and over a 3 year period, she developed many of her skills in lameness investigation, radiography, equine medicine and reproduction.\r\n\nHaving just completed the Southern Hemisphere stud season in QLD, Naomi has fallen in love with the Australian way of life and brings the next chapter of her professional journey to TRH Equine Vets.\r\n\n\r\n\nNot one to rest on her laurels, Naomi will soon commence her studies for her certificate in equine advanced veterinary practice. In her Spare time, Naomi enjoys horse riding (of course!), heading to the beach and making the most of what Queensland has to offer.\r\n\nTo make an appointment please call ‭\r\n\n0400841186"
+  vetDescription2: >-
+    Originally from Lancashire in the UK, Naomi grew up with horses and this is
+    where her interest in veterinary medicine began. 
+
+
+    Throughout her clinical studies at the University of Edinburgh, graduating
+    in July 2015, there was a focus on all things equine including time at an
+    equine hospital in Newmarket; the home of British horse racing. 
+
+
+    She started her career at a busy mixed practice and although she saw a
+    varied caseload, she wanted to pursue her interests in the equine field. 
+
+
+    6 months later, Naomi joined an equine only practice and over a 3 year
+    period, she developed many of her skills in lameness investigation,
+    radiography, equine medicine and reproduction.
+
+
+    Having just completed the Southern Hemisphere stud season in QLD, Naomi has
+    fallen in love with the Australian way of life and brings the next chapter
+    of her professional journey to TRH Equine Vets.
+
+
+    Not one to rest on her laurels, Naomi will soon commence her studies for her
+    certificate in equine advanced veterinary practice. In her Spare time, Naomi
+    enjoys horse riding (of course!), heading to the beach and making the most
+    of what Queensland has to offer.
+
+
+    To make an appointment please call ‭0400841186
   vetDescription3: >-
     Brief bio here rem aperiam, eaque ipsa quae ab illo inventore veritatis et
     quasi architecto beatae vitae dicta sunt.
@@ -124,6 +154,9 @@ aboutSection4:
       hoverIcon: /images/uploads/icon-5-hover.svg
       link: /examinations
       name: Pre-Purchase Examinations
+  subtitle: >-
+    Introduce affiliate providers tristique senectus et netus et malesuada fames
+    ac turpis egestas. Nunc fermentum dignissim enim.
   title: Our Services
 gallery:
   - content: >-
