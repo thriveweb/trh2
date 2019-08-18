@@ -28,6 +28,18 @@ accordion:
       modern, motorised ‘Powerfloat’ at the clinic to allow rapid and thorough
       completion of dentistry services.
     title: 'Dentistry '
+  - content: |-
+      Services provided for mares include:
+
+      * Routine and stud breeding management
+      * Artificial insemination
+      * Pregnancy diagnosis
+      * Twin reduction
+      * Diagnostic workups of infertile mares
+      * Pregnant mare care
+      * Obstetrics
+      * Foaling management
+    title: Equine Reproduction
 section2:
   title: Our Medical Cases
 gallery:
