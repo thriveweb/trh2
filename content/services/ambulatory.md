@@ -40,6 +40,54 @@ accordion:
       * Obstetrics
       * Foaling management
     title: Equine Reproduction
+  - content: >-
+      We cannot stress enough that problems with the eye are one of those
+      ailments which must be checked by a vet immediately.
+
+
+      If your horse’s eye/s show the following symptoms, we strongly urge you to
+      call a vet as soon as possible:
+
+
+      * weeping, tears that are clear
+
+      * discharge of any other colour, or consistency
+
+      * swelling of or around the eye
+
+      * sensitivity to light or touch
+
+      * blinking strangley, or keeping the eye closed
+
+      * white or other coloured spots/patches on the eye/cloudiness
+
+      * Lines or marks across the eye
+
+      * bleeding from the eye
+
+      * redness in or around the eye
+
+      * constricted/odd-looking pupils
+
+
+      Eyes are a very delicate organ. Self medicating with what might seem like
+      an innocuous cream can do more harm than good, and can result in the eye
+      becoming infected or even rupturing. When the eye ruptures in many cases
+      it has to be surgically removed.
+
+
+      To diagnose an eye complaint your vet would examine the eye with a light.
+      They usually would then stain it with fluroscein to determine the severity
+      and depth of the ulcer. If the vet fears that the ulcer is infected they
+      make take a swab to culture.
+
+
+      Depending on the diagnosis and severity, your vet may treat with a number
+      of prescription eye ointments, antibiotics, anti-inflammatories, and even
+      in some severe cases, eye surgery.  To try and avoid such a costly and
+      stressful outcome, we always advise to get a vet at the first sign of a
+      problem with the eye.
+    title: Ophthalmology (Eyes)
 section2:
   title: Our Medical Cases
 gallery:
