@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import Content from '../components/Content'
 
 import {
   Accordion,
@@ -25,7 +26,7 @@ class AccordionRepeater extends Component {
                 <p className="subtitle">{list.title}</p>
               </AccordionItemTitle>
               <AccordionItemBody className="accordion-item--body">
-                <p>{list.content}</p>
+                <Content source={list.content} />
 
                 {list.link && (
                   <a className="Button" href={list.link.publicURL}>
