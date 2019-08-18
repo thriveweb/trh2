@@ -1,6 +1,6 @@
 ---
 template: SingleService
-slug: Osteoarthritis treatment
+slug: treatment
 title: Osteoarthritis Treatment
 serviceIntro:
   icon: /images/uploads/service-icon-2.svg
