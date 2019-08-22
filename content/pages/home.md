@@ -4,15 +4,14 @@ slug: ''
 title: TRH Equine Vets
 section1:
   heroImage: /images/uploads/img_7373.jpg
-  subtitle:
-    Dedicated to providing the best quality of care to you and your equine
+  subtitle: Dedicated to providing the best quality of care to you and your equine
   title: Mobile Horse Diagnosticss
 section2:
   content: >-
-    TRH Equine Vets offers a full range of equine medical and surgical
-    servicess. Our team of veterinarians is trained to conduct everything from
-    general health and wellness exams to intensive care and diagnostic services
-    for your horses.
+    TRH Equine Vets offers a full range of equine medical and surgical services.
+    Our team of veterinarians is trained to conduct everything from general
+    health and wellness exams to intensive care and diagnostic services for your
+    horses.
 section3:
   backgroundImage: /images/uploads/background-image-2.jpg
   singleService:
@@ -51,7 +50,7 @@ section4:
     basic call out fee.
   title: For all your equine veterinary needs please contact our team
 section5:
-  backgroundImage: /images/uploads/img_7370.jpg
+  backgroundImage: /images/uploads/img_7376.jpg
   content: >-
     Is to provide and promote the highest quality of veterinary care to our
     patients through excellence in veterinary medicine and unprecedented medical
@@ -63,4 +62,9 @@ section5:
     with the upmost respect, honesty and compassion as if they were our own
     family.
   title: Our Vision
+section6:
+  title: s
+gallery:
+  - {}
 ---
+
