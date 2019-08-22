@@ -1,7 +1,7 @@
 ---
 template: SingleService
 slug: diagnostics
-title: Diagnostics - Radiography
+title: 'Diagnostics '
 serviceIntro:
   icon: /images/uploads/service-icon-6.svg
   subtitle: >-
