@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://trh3.netlify.com//* https://trhequinevets.com.au/:splat 301!
