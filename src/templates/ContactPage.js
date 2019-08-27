@@ -10,7 +10,11 @@ import GoogleMap from '../components/GoogleMap'
 import './contact.scss'
 
 // Export Template for use in CMS preview
-export const ContactPageTemplate = ({ header, contactSection1, contactSection2 }) => (
+export const ContactPageTemplate = ({
+  header,
+  contactSection1,
+  contactSection2
+}) => (
   <Fragment>
     <main className="Contact">
       <PageHeader
@@ -71,9 +75,9 @@ export const ContactPageTemplate = ({ header, contactSection1, contactSection2 }
             <h4>Parking</h4>
             <p>{contactSection2.parkingInfo}</p>
           </div>
-          <GoogleMap />
+          {/* <GoogleMap /> */}
+          <Image src="/images/map.png" alt="map" />
         </section>
-
       </section>
     </main>
   </Fragment>
